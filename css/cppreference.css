@@ -1,0 +1,244 @@
+/* todo: make standardized with shared */
+
+:root {
+    --page-background: rgb(14, 12, 29);
+    --normal-text: rgb(255, 255, 255);
+    --normal-code: rgb(245, 245, 245);
+    --punctuation: rgb(204, 204, 204);
+    --table-background: rgb(21, 18, 43);
+    --table-background1: rgb(28, 24, 58);
+    --table-border: rgb(53, 46, 109);
+    --link: rgb(169, 112, 255);
+    --link-visited: rgb(178, 172, 220);
+    --selflink: rgb(208, 173, 240);
+    --constant: rgb(79, 193, 255);
+    --local-var: rgb(156, 220, 254);
+    --function: rgb(220, 220, 170);
+    --language-predefined: rgb(86, 156, 214);
+    --braces: rgb(255, 215, 0);
+    --string-literal: rgb(206, 145, 120);
+    --escape-sequence: rgb(215, 186, 125);
+    --comment: rgb(106, 153, 85);
+    --control-keyword: rgb(197, 134, 192);
+    --preprocessor: rgba(255, 255, 255, 0.5);
+    --numeric-literal: rgb(181, 206, 168);
+}
+
+* {
+    border-color: var(--table-border) !important;
+}
+
+/* page background */
+body,
+#cpp-content-base,
+.t-navbar-menu>div,
+.mbox-text {
+    background-color: var(--page-background) !important;
+}
+
+@media screen {
+
+    #mw-head>div>div,
+    #footer,
+    #content {
+        width: 1500px !important;
+    }
+}
+
+/* basic text areas */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+td,
+th,
+div {
+    color: var(--normal-text) !important;
+}
+
+ul {
+    list-style-type: disc !important;
+    list-style-image: none !important;
+}
+
+ul li::marker {
+    color: var(--link) !important;
+}
+
+/* header and footer */
+#mw-head *,
+#cpp-footer-base {
+    background: var(--table-background) !important;
+    border-color: var(--table-border) !important;
+}
+
+#mw-head>#cpp-head-second-base a {
+    font-weight: bold;
+}
+
+#footer-icons {
+    display: none;
+}
+
+#mw-head {
+    border-bottom: 1px solid var(--table-border) !important;
+}
+
+#mw-head ul>li {
+    border-right: 1px solid var(--table-border) !important;
+}
+
+#mw-head ul>li:first-child {
+    border-left: 1px solid var(--table-border) !important;
+}
+
+.t-navbar>.t-navbar-sep {
+    display: none;
+}
+
+.t-navbar>.t-navbar-head {
+    border-right: 1px solid var(--table-border) !important;
+}
+
+.t-navbar>.t-navbar-head:nth-child(2) {
+    border-left: 1px solid var(--table-border) !important;
+}
+
+#cpp-head-search,
+#cpp-head-personal,
+#ca-edit {
+    display: none;
+}
+
+/* tables and code examples */
+.mw-geshi,
+span.t-c,
+table.mainpagetable td,
+div.t-member,
+table.wikitable,
+table.wikitable td,
+.t-inherited,
+table.t-rev,
+table.t-rev-begin,
+table.t-rev td,
+table.t-rev-begin td {
+    background-color: var(--table-background) !important;
+    border-color: var(--table-border) !important;
+}
+
+h1,
+table.wikitable th,
+table.t-dsc td,
+table.t-dsc-begin td,
+table.t-dcl-begin,
+table.dsctable td,
+td {
+    border-color: var(--table-border) !important;
+}
+
+table.wikitable th {
+    background-color: var(--table-background1) !important;
+}
+
+/* things like [static] */
+span.t-cmark,
+.t-spar {
+    color: var(--preprocessor) !important;
+}
+
+/* parameter */
+tr.t-par>td:first-child {
+    color: var(--local-var) !important;
+}
+
+/* code section default text color */
+pre[class^=de] {
+    color: var(--normal-code) !important;
+}
+
+/* logo */
+#mw-head h5>a {
+    color: white !important;
+}
+
+/* links */
+a:not(:visited) {
+    color: var(--link) !important;
+}
+
+/* visited links */
+a:visited {
+    color: var(--link-visited) !important;
+}
+
+/* selflink */
+strong.selflink {
+    color: var(--selflink) !important;
+}
+
+/* "Run this code" buttons */
+.coliru-btn {
+    background: var(--link) !important;
+}
+
+/* keywords */
+.kw2,
+.kw4 {
+    color: var(--language-predefined) !important;
+}
+
+/* control keywords */
+.kw1 {
+    color: var(--control-keyword) !important;
+}
+
+/* brackets/braces */
+.br0 {
+    color: var(--braces) !important;
+}
+
+/* system */
+.sy1,
+.sy2,
+.sy3,
+.sy4 {
+    color: var(--punctuation) !important;
+}
+
+/* strings */
+.st0 {
+    color: var(--string-literal) !important;
+}
+
+/* escape sequence */
+.es1,
+.es2,
+.es3,
+.es4,
+.es5 {
+    color: var(--escape-sequence) !important;
+}
+
+/* comments & revisions */
+.co1,
+.t-mark,
+.t-mark-rev {
+    color: var(--comment) !important;
+}
+
+/* number literal */
+.nu0,
+.nu12,
+.nu16,
+.nu17 {
+    color: var(--numeric-literal) !important;
+}
+
+/* preprocessor */
+.co2 {
+    color: var(--preprocessor) !important;
+}

@@ -1,0 +1,152 @@
+body {
+    background-color: var(--opera-gx-background-color) !important;
+}
+
+#current-main-view,
+.mainview_item_page,
+#itemContainer_alge437,
+.tooltiptarget_bottomNavbar,
+.aleks_content_style,
+.ansed_tree {
+    background-color: var(--opera-gx-background-color) !important;
+    color: white !important;
+}
+
+.ansed_root {
+    border-color: var(--opera-gx-accent-color) !important;
+}
+
+div.ansed_tree * {
+    color: white !important;
+}
+
+canvas.ansed_canvas {
+    filter: invert();
+}
+
+#menubar_undefined_0_ansed>div {
+    background-color: var(--opera-gx-background-color-1) !important;
+    border-color: var(--opera-gx-background-color-5) !important;
+    box-shadow: none !important;
+}
+
+#menubar_undefined_0_ansed span {
+    background-color: transparent !important;
+}
+
+img {
+    filter: invert() hue-rotate(calc(env(-opera-gx-accent-color-h) * 1deg)) !important;
+}
+
+svg * {
+    fill: var(--opera-gx-accent-color) !important;
+}
+
+#welcomePage,
+#main_algo_body.main_algo_aleks>*,
+.tooltiptarget_banner,
+.tooltiptarget_bottomNavbar,
+.tooltiptarget_bottomNavbar+div {
+    max-width: 100% !important;
+}
+
+.tooltiptarget_banner table {
+    background-color: var(--opera-gx-background-color-1) !important;
+    border-bottom: 1px solid var(--opera-gx-background-color-3) !important;
+}
+
+#current-main-view>div.hide_print {
+    right: 20px !important;
+}
+
+.mainview_item_page {
+    height: 100% !important;
+}
+
+.tooltiptarget_bottomNavbar {
+    border-top: 1px solid var(--opera-gx-accent-color) !important;
+    bottom: 0 !important;
+}
+
+.tooltiptarget_bottomNavbar+div {
+    display: none !important;
+}
+
+button.primary {
+    background-color: var(--opera-gx-accent-color) !important;
+}
+
+button.standard {
+    background-color: var(--opera-gx-background-color-3) !important;
+    color: white !important;
+    border-color: var(--opera-gx-background-color-5) !important;
+}
+
+#containerEditButton {
+    background-color: transparent !important;
+}
+
+button.secondary {
+    background-color: var(--opera-gx-background-color-2) !important;
+    border-color: var(--opera-gx-background-color-4) !important;
+    border-width: 1px !important;
+}
+
+button.tooltiptarget_toggle_carousel {
+    background-color: var(--opera-gx-background-color-2) !important;
+    border-top-color: var(--opera-gx-background-color-5) !important;
+}
+
+.removeiframe>div:last-child {
+    background-color: black !important;
+}
+
+table button>div {
+    background-color: var(--opera-gx-background-color-2) !important;
+    border-color: var(--opera-gx-background-color-5) !important;
+    border-width: 1px !important;
+}
+
+table button>div>* {
+    color: color-mix(in srgb, var(--opera-gx-accent-color) 40%, white) !important;
+}
+
+table button>div>div:last-child {
+    background-color: var(--opera-gx-background-color-3) !important;
+    border-color: var(--opera-gx-background-color-5) !important;
+    bottom: 1px !important;
+    left: 1px !important;
+    right: 1px !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+table button svg+div {
+    color: var(--opera-gx-accent-color) !important;
+}
+
+a {
+    color: var(--opera-gx-accent-color) !important;
+}
+
+.aleks-ui-Tooltip {
+    background-color: var(--opera-gx-background-color-1) !important;
+    border-color: var(--opera-gx-background-color-3) !important;
+    box-shadow: none !important;
+}
+
+.aleks-ui-Tooltip * {
+    color: var(--opera-gx-accent-color) !important;
+}
+
+.aleks-ui-Tooltip .tipLocation-top>* {
+    border-bottom-color: var(--opera-gx-background-color-3) !important;
+}
+
+.aleks-ui-Tooltip .tipLocation-top>:first-child {
+    top: 0 !important;
+}
+
+.aleks-ui-Tooltip .tipLocation-top>:last-child {
+    display: none !important;
+}

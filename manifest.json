@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "Amity GX",
+    "description": "I just want some dark themes for websites nobody else thinks to put them on.",
+    "version": "0.1",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "Henry Wilder"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://www-awu.aleks.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/shared.css",
+                        "css/aleks.css"
+                    ]
+                },
+                {
+                    "matches":
+                    [
+                        "https://*.cppreference.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/shared.css",
+                        "css/cppreference.css"
+                    ]
+                }
+            ]
+        }
+    }
+}
