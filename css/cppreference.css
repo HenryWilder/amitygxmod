@@ -9,7 +9,7 @@
     --table-background1: var(--opera-gx-background-color-2);
     --table-border: var(--opera-gx-background-color-4);
     --link: var(--opera-gx-accent-color);
-    --link-visited: var(--opera-gx-accent-color-3);
+    --link-visited: var(--opera-gx-background-color-10-2);
     --selflink: var(--opera-gx-accent-color-2);
 
     /* syntax highlighting */
