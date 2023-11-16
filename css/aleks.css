@@ -23,7 +23,7 @@ div[role=heading]>div {
 
 #current-main-view,
 .mainview_item_page,
-#itemContainer_alge437,
+[id^=itemContainer_alge],
 .tooltiptarget_bottomNavbar,
 .aleks_content_style {
     background-color: var(--opera-gx-background-color) !important;
@@ -34,11 +34,11 @@ div[role=heading]>div {
     filter: brightness(100%);
 }
 
-#ansed_answer_2 canvas {
+[id^=ansed_answer] canvas {
     filter: invert();
 }
 
-#ansed_answer_2>.ansed_root {
+[id^=ansed_answer]>.ansed_root {
     border: 1px solid white !important;
 }
 
@@ -139,8 +139,8 @@ table button>div>div:last-child {
     bottom: 1px !important;
     left: 1px !important;
     right: 1px !important;
-    border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 9px !important;
+    border-bottom-right-radius: 9px !important;
 }
 
 table button svg+div {
@@ -175,4 +175,28 @@ a {
 
 div.body3 {
     color: var(--opera-gx-accent-color) !important;
+}
+
+[style*="background-color: rgb(240, 243, 244)"] {
+    background-color: var(--opera-gx-background-color) !important;
+}
+
+#lightBulbTarget_carouselScrollable {
+    background-color: var(--opera-gx-background-color-1) !important;
+}
+
+.tooltiptarget_carousel>button {
+    background-color: var(--opera-gx-accent-color) !important;
+}
+
+.aleks-calculator__button--numpad {
+    background-color: var(--opera-gx-background-color-1) !important;
+}
+
+.aleks-calculator__button--input {
+    background-color: var(--opera-gx-background-color-2) !important;
+}
+
+.aleks-calculator__button-cell {
+    border: 1px solid transparent !important;
 }
