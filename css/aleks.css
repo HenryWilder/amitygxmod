@@ -2,26 +2,48 @@ body {
     background-color: var(--opera-gx-background-color) !important;
 }
 
+p,
+div,
+span {
+    color: white;
+}
+
+[style*="background-color: rgb(255, 255, 255)"],
+[style*="background: none rgb(255, 255, 255)"] {
+    background-color: var(--opera-gx-background-color) !important;
+}
+
+[style*="color: rgb(70, 112, 125)"] {
+    color: var(--opera-gx-accent-color) !important;
+}
+
+div[role=heading]>div {
+    border-bottom: 1px solid var(--opera-gx-background-color-4) !important;
+}
+
 #current-main-view,
 .mainview_item_page,
 #itemContainer_alge437,
 .tooltiptarget_bottomNavbar,
-.aleks_content_style,
-.ansed_tree {
+.aleks_content_style {
     background-color: var(--opera-gx-background-color) !important;
     color: white !important;
 }
 
 .ansed_root {
-    border-color: var(--opera-gx-accent-color) !important;
+    filter: brightness(100%);
 }
 
-div.ansed_tree * {
-    color: white !important;
-}
-
-canvas.ansed_canvas {
+#ansed_answer_2 canvas {
     filter: invert();
+}
+
+#ansed_answer_2>.ansed_root {
+    border: 1px solid white !important;
+}
+
+.ansed_tree>span {
+    color: white !important;
 }
 
 #menubar_undefined_0_ansed>div {
@@ -130,8 +152,8 @@ a {
 }
 
 .aleks-ui-Tooltip {
-    background-color: var(--opera-gx-background-color-1) !important;
-    border-color: var(--opera-gx-background-color-3) !important;
+    background-color: var(--opera-gx-background-color-2) !important;
+    border-color: var(--opera-gx-background-color-5) !important;
     box-shadow: none !important;
 }
 
@@ -140,7 +162,7 @@ a {
 }
 
 .aleks-ui-Tooltip .tipLocation-top>* {
-    border-bottom-color: var(--opera-gx-background-color-3) !important;
+    border-bottom-color: var(--opera-gx-background-color-5) !important;
 }
 
 .aleks-ui-Tooltip .tipLocation-top>:first-child {
@@ -149,4 +171,8 @@ a {
 
 .aleks-ui-Tooltip .tipLocation-top>:last-child {
     display: none !important;
+}
+
+div.body3 {
+    color: var(--opera-gx-accent-color) !important;
 }
