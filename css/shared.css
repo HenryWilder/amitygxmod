@@ -10,4 +10,9 @@
     --opera-gx-background-color-3: rgb(calc(env(-opera-gx-background-color-r) * 2.5), calc(env(-opera-gx-background-color-g) * 2.5), calc(env(-opera-gx-background-color-b) * 2.5));
     --opera-gx-background-color-4: rgb(calc(env(-opera-gx-background-color-r) * 4), calc(env(-opera-gx-background-color-g) * 4), calc(env(-opera-gx-background-color-b) * 4));
     --opera-gx-background-color-5: rgb(calc(env(-opera-gx-background-color-r) * 5.5), calc(env(-opera-gx-background-color-g) * 5.5), calc(env(-opera-gx-background-color-b) * 5.5));
+
+    --opera-gx-accent-color-1: color-mix(in srgb, var(--opera-gx-accent-color) 80%, white);
+    --opera-gx-accent-color-2: color-mix(in srgb, var(--opera-gx-accent-color) 60%, white);
+    --opera-gx-accent-color-3: color-mix(in srgb, var(--opera-gx-accent-color) 40%, white);
+    --opera-gx-accent-color-4: color-mix(in srgb, var(--opera-gx-accent-color) 20%, white);
 }

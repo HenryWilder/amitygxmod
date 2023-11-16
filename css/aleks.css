@@ -130,7 +130,7 @@ table button>div {
 }
 
 table button>div>* {
-    color: color-mix(in srgb, var(--opera-gx-accent-color) 40%, white) !important;
+    color: var(--opera-gx-accent-color-3) !important;
 }
 
 table button>div>div:last-child {

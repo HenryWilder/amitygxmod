@@ -1,16 +1,18 @@
-/* todo: make standardized with shared */
+/* todo: make work with light theme (maybe) */
 
 :root {
-    --page-background: rgb(14, 12, 29);
+    --page-background: var(--opera-gx-background-color);
     --normal-text: rgb(255, 255, 255);
     --normal-code: rgb(245, 245, 245);
     --punctuation: rgb(204, 204, 204);
-    --table-background: rgb(21, 18, 43);
-    --table-background1: rgb(28, 24, 58);
-    --table-border: rgb(53, 46, 109);
-    --link: rgb(169, 112, 255);
-    --link-visited: rgb(178, 172, 220);
-    --selflink: rgb(208, 173, 240);
+    --table-background: var(--opera-gx-background-color-1);
+    --table-background1: var(--opera-gx-background-color-2);
+    --table-border: var(--opera-gx-background-color-4);
+    --link: var(--opera-gx-accent-color);
+    --link-visited: var(--opera-gx-accent-color-3);
+    --selflink: var(--opera-gx-accent-color-2);
+
+    /* syntax highlighting */
     --constant: rgb(79, 193, 255);
     --local-var: rgb(156, 220, 254);
     --function: rgb(220, 220, 170);
