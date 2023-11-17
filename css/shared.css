@@ -2,6 +2,10 @@
     --opera-gx-accent-color-rgb: env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b);
     --opera-gx-accent-color: rgb(var(--opera-gx-accent-color-rgb));
 
+    --opera-gx-accent-color-hue-deg: calc(env(-opera-gx-accent-color-h) * 1deg);
+    --opera-gx-accent-color-sat: env(-opera-gx-accent-color-s);
+    --opera-gx-accent-color-lum: env(-opera-gx-accent-color-l);
+
     --opera-gx-background-color-rgb: env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b);
     --opera-gx-background-color: rgb(var(--opera-gx-background-color-rgb));
 

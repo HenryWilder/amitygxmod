@@ -50,6 +50,17 @@
                         "css/shared.css",
                         "css/twitter.css"
                     ]
+                },
+                {
+                    "matches":
+                    [
+                        "https://*.google.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/shared.css",
+                        "css/google.css"
+                    ]
                 }
             ]
         }
