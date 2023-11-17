@@ -39,6 +39,17 @@
                         "css/shared.css",
                         "css/cppreference.css"
                     ]
+                },
+                {
+                    "matches":
+                    [
+                        "https://twitter.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/shared.css",
+                        "css/twitter.css"
+                    ]
                 }
             ]
         }
