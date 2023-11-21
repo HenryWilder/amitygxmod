@@ -16,6 +16,7 @@
         "schema_version": 1,
         "payload":
         {
+            "background_music": [],
             "page_styles":
             [
                 {
@@ -81,7 +82,8 @@
                     "css":
                     [
                         "css/shared.css",
-                        "css/zybooks.css"
+                        "css/zybooks.css",
+                        "css/zybooks-code.css"
                     ]
                 }
             ]

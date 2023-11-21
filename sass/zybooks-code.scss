@@ -1,0 +1,146 @@
+.console {
+  background-color: black !important;
+}
+
+.console>pre {
+  color: rgb(0, 255, 0) !important;
+}
+
+.content-tools-app div.code,
+.content-tools-app div.code-number,
+.content-tools-app div.console,
+.content-tools-app div.construct,
+.test-question div.code,
+.test-question div.code-number,
+.test-question div.console,
+.test-question div.construct,
+.unique div.code,
+.unique div.code-number,
+.unique div.console,
+.unique div.construct,
+.zybook-section div.code,
+.zybook-section div.code-number,
+.zybook-section div.console,
+.zybook-section div.construct {
+  font-family: Segoe WPC, Segoe UI, sans-serif !important;
+}
+
+:root {
+  --mtk1-color: #cccccc;
+  --mtk3-color: #d4d4d4;
+  --mtk5-color: #6a9955;
+  --mtk6-color: #569cd6;
+  --mtk7-color: #b5cea8;
+  --mtk12-color: #ce9178;
+  --mtk16-color: #dcdcaa;
+  --mtk17-color: #4ec9b0;
+  --mtk18-color: #c586c0;
+  --vscode-editor-selectionBackground: #264f78;
+}
+
+/* Animations */
+.animation-canvas [style*="background-color: rgb(255, 255, 255)"] {
+  background-color: var(--vscode-editor-selectionBackground) !important;
+}
+
+.animation-canvas {
+  background-color: transparent !important;
+}
+
+.animation-canvas [style*="color: rgb(51, 51, 51)"] {
+  color: var(--opera-gx-background-color-10-3) !important;
+}
+
+.animation-canvas [style*="border-color: rgb(51, 51, 51)"] {
+  border-color: var(--opera-gx-background-color-10-3) !important;
+}
+
+/* Syntax highlighting */
+.code,
+[style*="background-color: rgb(176, 214, 251)"] {
+  background-color: rgb(31, 31, 31) !important;
+  color: var(--mtk1-color) !important;
+  border: 1px solid black !important;
+  border-radius: 10px !important;
+  padding: 20px !important;
+}
+
+.highlight pre {
+  color: unset !important;
+}
+
+/* "#include" */
+.highlight .cp {
+  color: var(--mtk18-color) !important;
+}
+
+/* "<iostream>" */
+.highlight .cpf {
+  color: var(--mtk12-color) !important;
+  font-style: unset !important;
+}
+
+/* "namespace" */
+.highlight .k,
+.hljs-keyword {
+  color: var(--mtk6-color) !important;
+}
+
+/* "void"/"int" */
+.highlight .kt,
+.hljs-type {
+  color: var(--mtk6-color) !important;
+}
+
+/* user-defined class */
+.highlight .nc,
+.hljs-title.class_ {
+  color: var(--mtk17-color) !important;
+}
+
+/* string literal */
+.highlight .s,
+.hljs-string {
+  color: var(--mtk12-color) !important;
+}
+
+/* number literal */
+.highlight .mi,
+.hljs-number {
+  color: var(--mtk7-color) !important;
+}
+
+/* punctuation */
+.highlight .p,
+.hljs-params {
+  color: var(--mtk1-color) !important;
+}
+
+/* operator */
+.highlight .o {
+  color: var(--mtk3-color) !important;
+}
+
+/* name */
+.highlight .n {
+  color: var(--mtk1-color) !important;
+}
+
+/* namespace */
+.highlight .nn {
+  color: var(--mtk17-color) !important;
+}
+
+/* function */
+.highlight .nf,
+.hljs-function>.hljs-title,
+.hljs-built_in {
+  color: var(--mtk16-color) !important;
+}
+
+/* comment */
+.highlight .c1 {
+  color: var(--mtk5-color) !important;
+}
+
+/*# sourceMappingURL=zybooks-code.css.map */

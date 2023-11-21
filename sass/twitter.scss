@@ -139,15 +139,15 @@ svg [stroke="#2F3336"] {
     border-color: var(--opera-gx-accent-color) !important;
 }
 
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
     background: var(--opera-gx-background-color-2);
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--opera-gx-background-color-4);
 }
 
-*::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: var(--opera-gx-background-color-5);
 }
 

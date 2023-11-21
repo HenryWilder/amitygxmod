@@ -1,0 +1,428 @@
+.route-container,
+body {
+    background-color: var(--opera-gx-background-color) !important;
+}
+
+.toolbar,
+.top-toolbar {
+    background-color: var(--opera-gx-background-color-1) !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid var(--opera-gx-background-color-4) !important;
+}
+
+.bread-crumbs a,
+.bread-crumbs .divider,
+.right-buttons span,
+.right-buttons div {
+    color: var(--opera-gx-background-color-7) !important;
+}
+
+[class*="material-icons"] {
+    color: var(--opera-gx-accent-color) !important;
+}
+
+.not-found-page .section-nav,
+.section-preview-modal .section-nav,
+.zybook-chapter-print-page .section-nav,
+.zybook-chapter-section-loading-page .section-nav,
+.zybook-chapter-section-page .section-nav,
+.zybook-create-section-page .section-nav,
+.zybook-edit-section-page .section-nav,
+.zybook-error-page .section-nav,
+.zybook-unused-section-loading-page .section-nav,
+.zybook-unused-section-page .section-nav,
+.zylab-ui-page .section-nav,
+.insert-content.in-section.expanded.inverted,
+.insert-content.in-side-menu,
+.modify-section .toolbar-container .toolbar-card,
+.modify-section .zybook-exam-section .access-controls,
+.modify-section .zybook-exam-section .result-details,
+.not-found-page .time-remaining-toast,
+.section-preview-modal .time-remaining-toast,
+.section-settings-menu,
+.unknown-content-resource,
+.zb-card,
+.zybook-chapter-print-page .time-remaining-toast,
+.zybook-chapter-section-loading-page .time-remaining-toast,
+.zybook-chapter-section-page .time-remaining-toast,
+.zybook-create-section-page .time-remaining-toast,
+.zybook-edit-section-page .time-remaining-toast,
+.zybook-error-page .time-remaining-toast,
+.zybook-unused-section-loading-page .time-remaining-toast,
+.zybook-unused-section-page .time-remaining-toast,
+.zylab-ui-page .time-remaining-toast {
+    background-color: var(--opera-gx-background-color-1) !important;
+    border: 1px solid var(--opera-gx-background-color-4) !important;
+    border-radius: 10px !important;
+    overflow: clip !important;
+}
+
+.zb-nav-menu {
+    background-color: var(--opera-gx-background-color-1) !important;
+    border: 1px solid var(--opera-gx-background-color-4) !important;
+
+    a,
+    button,
+    li {
+        color: var(--opera-gx-background-color-10-3) !important;
+    }
+
+    li {
+
+        :hover,
+        :hover>i {
+            color: var(--opera-gx-accent-color) !important;
+        }
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--opera-gx-accent-color) !important;
+}
+
+.MLK__rows>.row .action.check,
+.about-page-modal,
+.about-page-modal .new-sections-table,
+.accessibility-modal h1,
+.ace-editor-container .drop-file-message,
+.activity-filter,
+.add-zylab-options,
+.add-zylab-options h1,
+.ai-zylab-helper .ai-conversation-container .ai-message-container .ai-message,
+.application-notification,
+.application-notification .c-notification__content,
+.assignment-details,
+.assignment-due-date-lms-details,
+.assignment-section-summary .next-section-link,
+.assignment-summary,
+.availability-options .copy-pw-clipboard,
+.body-text,
+.bread-crumbs,
+.catalog-extension-modal,
+.catalog-item-info-modal,
+.catalog-item-info-modal h2,
+.catalog-page .class-instructions .instructions,
+.catalog-page h1,
+.catalog-take-class-modal h1,
+.chapter-item .section-list-container .empty-chapter-text,
+.class-statistics .lab-statistics-row .stat-container,
+.clone-zylab,
+.clone-zylab h1,
+.content-resource.container-content-resource .container-resource-payload details>summary,
+.content-resource.container-content-resource.table .table-insert-editor .fr-toolbar .fr-btn:last-child,
+.content-tools-app a.common_error,
+.content-tools-app a.good_practice,
+.develop-mode .instructions,
+.exercise-info-modal h2,
+.file-io .error-message,
+.file-io .instructions,
+.instructor-note-container .show-edit-instructor-note-icon,
+.instructor-view-student-submissions .manual-test,
+.instructor-view-student-submissions p,
+.interactive-activity-container .activity-payload,
+.lab-statistics-charts .chart-container,
+.lti-instructions-panel .assignment-info-text,
+.lti-instructions-panel .hidden-assignments-text,
+.lti-instructions-panel .no-assignments-text,
+.manage-class-modal .confirmation-message,
+.manage-class-modal .updated-message,
+.manage-class-modal .warning-message,
+.mathworks-editor-card .message,
+.mathworks-tos-modal,
+.modify-section .toolbar-container .toolbar-card .show-me-how-link,
+.multiple-choice-exam-question,
+.my-class-instructor-panel .panel-content .scrollable-content .manage-class-ul,
+.not-found-page .copy-pw-clipboard,
+.not-found-page .instructor-hidden-message,
+.not-found-page .section-banner,
+.not-found-page .section-header-row .section-action-container .edit-lab-link,
+.not-found-page .zybook-section,
+.not-found-page .zybook-section .zybook-section-title,
+.privacy-page,
+.python-course-modal,
+.pythonTutor .ExecutionVisualizer #vcrControls .button,
+.request-refund-modal h1,
+.review-adoption,
+.review-adoption .back-to-library-link,
+.section-assignment-details .assignment-choices-container .no-activities-text,
+.section-preview-modal .copy-pw-clipboard,
+.section-preview-modal .instructor-hidden-message,
+.section-preview-modal .section-banner,
+.section-preview-modal .section-header-row .section-action-container .edit-lab-link,
+.section-preview-modal .zybook-section,
+.section-preview-modal .zybook-section .zybook-section-title,
+.strict-equal-assert-result .type-message,
+.student-instructions-modal .copy-instructions-to-clipboard-button,
+.student-instructions-modal .instructions-text,
+.student-instructions-modal h1,
+.subscribe-student-panel .already-paid,
+.table-of-contents .activity-selection-header .header-title,
+.table-of-contents .configure-header .header-title,
+.table-of-contents .detail-text,
+.table-of-contents .section-assignment-header .header-title,
+.table-of-contents .section-selection-header .header-title,
+.test-question a.common_error,
+.test-question a.good_practice,
+.test-results-modal .testing-instructions-list,
+.tos-page,
+.unique a.common_error,
+.unique a.good_practice,
+.validator-text,
+.view-receipt-modal,
+.view-request-card,
+.view-request-card .back-to-library-link,
+.webinar-info-modal h1,
+.zb-button,
+.zb-feedback .expanded-feedback .zb-control-row .more-info,
+.zb-footer,
+.zb-nav-menu .chapter-labels .nav-item-label,
+.zb-nav-menu .chapter-labels .nav-item-label-empty,
+.zb-nav-menu .chapter-labels .nav-item-label-exam,
+.zb-nav-menu .chapter-labels .nav-item-label-hidden,
+.zb-nav-menu .chapter-labels .nav-item-label-lab,
+.zb-nav-menu .chapter-labels .nav-item-label-optional,
+.zb-nav-menu .section-labels .nav-item-label,
+.zb-nav-menu .section-labels .nav-item-label-empty,
+.zb-nav-menu .section-labels .nav-item-label-exam,
+.zb-nav-menu .section-labels .nav-item-label-hidden,
+.zb-nav-menu .section-labels .nav-item-label-lab,
+.zb-nav-menu .section-labels .nav-item-label-optional,
+.zb-progress-circular,
+.zybook-advanced-zylab-similarity-page,
+.zybook-advanced-zylab-similarity-page .zb-toolbar .exit-button,
+.zybook-analytics-dashboard .highcharts-axis-title,
+.zybook-analytics-dashboard .highcharts-title,
+.zybook-analytics-dashboard .tooltip-container,
+.zybook-chapter-add-lab-page .add-lab-card,
+.zybook-chapter-add-lab-page .description,
+.zybook-chapter-add-lab-page .selected-labs-text,
+.zybook-chapter-add-lab-page .zb-table table .name-column .lab-title,
+.zybook-chapter-add-lab-page h3,
+.zybook-chapter-print-page .copy-pw-clipboard,
+.zybook-chapter-print-page .instructor-hidden-message,
+.zybook-chapter-print-page .section-banner,
+.zybook-chapter-print-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-chapter-print-page .zybook-section,
+.zybook-chapter-print-page .zybook-section .zybook-section-title,
+.zybook-chapter-section-loading-page .copy-pw-clipboard,
+.zybook-chapter-section-loading-page .instructor-hidden-message,
+.zybook-chapter-section-loading-page .section-banner,
+.zybook-chapter-section-loading-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-chapter-section-loading-page .zybook-section,
+.zybook-chapter-section-loading-page .zybook-section .zybook-section-title,
+.zybook-chapter-section-page .assignment-completion-summary-card,
+.zybook-chapter-section-page .assignment-section-announcement .section-announcement-block-content,
+.zybook-chapter-section-page .copy-pw-clipboard,
+.zybook-chapter-section-page .instructor-hidden-message,
+.zybook-chapter-section-page .section-banner,
+.zybook-chapter-section-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-chapter-section-page .zybook-section,
+.zybook-chapter-section-page .zybook-section .zybook-section-title,
+.zybook-configure-panel .error-message,
+.zybook-configure-panel .panel-content .instructions-text,
+.zybook-configure-panel .panel-content .move-sections-button,
+.zybook-content-explorer-page .zybook-outline .resource-info-container .resource-caption,
+.zybook-content-explorer-page .zybook-outline .term-definition,
+.zybook-content-explorer-printable-page .zybook-outline .resource-info-container .resource-caption,
+.zybook-content-explorer-printable-page .zybook-outline .term-definition,
+.zybook-create-section-page .copy-pw-clipboard,
+.zybook-create-section-page .instructor-hidden-message,
+.zybook-create-section-page .section-banner,
+.zybook-create-section-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-create-section-page .zybook-section,
+.zybook-create-section-page .zybook-section .zybook-section-title,
+.zybook-edit-section-page .copy-pw-clipboard,
+.zybook-edit-section-page .instructor-hidden-message,
+.zybook-edit-section-page .section-banner,
+.zybook-edit-section-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-edit-section-page .zybook-section,
+.zybook-edit-section-page .zybook-section .zybook-section-title,
+.zybook-error-page .copy-pw-clipboard,
+.zybook-error-page .instructor-hidden-message,
+.zybook-error-page .section-banner,
+.zybook-error-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-error-page .zybook-section,
+.zybook-error-page .zybook-section .zybook-section-title,
+.zybook-extension-modal,
+.zybook-getting-started-page .explanatory-text,
+.zybook-getting-started-page .video-list,
+.zybook-ordering-preview .info-list,
+.zybook-outline-filter,
+.zybook-section .instructor-note,
+.zybook-section a.common_error,
+.zybook-section a.good_practice,
+.zybook-section.instructor-created-zybook-section h1,
+.zybook-section.instructor-created-zybook-section pre,
+.zybook-unit-test-help-page .zybook-section-title,
+.zybook-unused-section-loading-page .copy-pw-clipboard,
+.zybook-unused-section-loading-page .instructor-hidden-message,
+.zybook-unused-section-loading-page .section-banner,
+.zybook-unused-section-loading-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-unused-section-loading-page .zybook-section,
+.zybook-unused-section-loading-page .zybook-section .zybook-section-title,
+.zybook-unused-section-page .copy-pw-clipboard,
+.zybook-unused-section-page .instructor-hidden-message,
+.zybook-unused-section-page .section-banner,
+.zybook-unused-section-page .section-header-row .section-action-container .edit-lab-link,
+.zybook-unused-section-page .zybook-section,
+.zybook-unused-section-page .zybook-section .zybook-section-title,
+.zybook-zylab-similarity-page,
+.zybook-zylab-similarity-page .zb-toolbar .exit-button,
+.zylab-table-section-header .info-text,
+.zylab-table-section-header .zybook-graphic-container .zybook-details,
+.zylab-ui-page .copy-pw-clipboard,
+.zylab-ui-page .instructor-hidden-message,
+.zylab-ui-page .section-banner,
+.zylab-ui-page .section-header-row .section-action-container .edit-lab-link,
+.zylab-ui-page .zybook-section,
+.zylab-ui-page .zybook-section .zybook-section-title,
+.zylabs-edit .code,
+.zylabs-edit .lab-spec .matlab-points,
+.zylabs-edit .lab-spec .section-card,
+.zylabs-edit .run-message,
+.zylabs-edit .save-lab-modal p,
+.zylabs-edit .save-lab-modal td,
+.zylabs-edit .student-files .file-editor .editor-container .ace-editor-header .description,
+.zylabs-edit .test-bench .test-summary,
+.zylabs-edit .test-results-modal .testing-instructions-list,
+.zylabs-view-test-bench,
+.zylabs-view-test-bench .test .test-description,
+.zystudio-student-activity .zystudio-manual-test {
+    color: var(--opera-gx-background-color-10-3) !important;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        color: var(--opera-gx-background-color-10-3) !important;
+    }
+}
+
+.section-announcement.primary .icon-container {
+    background-color: rgba(var(--opera-gx-accent-color-rgb), 0.7) !important;
+}
+
+@mixin primary-button-style {
+    background-color: var(--opera-gx-accent-color) !important;
+    color: white !important;
+}
+
+.zb-chevron.filled.orange,
+:not(.zb-card).primary,
+.raised {
+    @include primary-button-style;
+}
+
+.zb-chevron.filled.orange::before {
+    border-top-color: var(--opera-gx-accent-color) !important;
+}
+
+.interactive-activity-container,
+.resource-container,
+.static-container {
+    background-color: var(--opera-gx-background-color-2) !important;
+    border: 1px solid var(--opera-gx-background-color-5) !important;
+
+    .activity-type,
+    .activity-title-bar,
+    .activity-description {
+        background-color: var(--opera-gx-background-color-3) !important;
+    }
+
+    .activity-type {
+        border-right-color: var(--opera-gx-background-color-5) !important;
+    }
+}
+
+.interactive-activity-container {
+    .activity-title-bar {
+        border-bottom: 1px solid var(--opera-gx-background-color-5) !important;
+    }
+
+    &.participation .activity-title-bar {
+        border-left-color: var(--opera-gx-accent-color) !important;
+    }
+}
+
+input,
+textarea {
+    border-color: var(--opera-gx-background-color-5) !important;
+}
+
+input:checked {
+    background-color: var(--opera-gx-background-color-5) !important;
+}
+
+.content-tools-app,
+.test-question,
+.unique,
+.zybook-section {
+    .term {
+        color: white !important;
+    }
+}
+
+.zb-feedback .expanded-feedback {
+    background-color: var(--opera-gx-background-color-3) !important;
+    border-color: var(--opera-gx-background-color-4) !important;
+}
+
+textarea {
+    background-color: var(--opera-gx-background-color-2) !important;
+}
+
+.zb-nav-menu {
+
+    .chapter-labels,
+    .section-labels {
+        .nav-item-label-lab {
+            color: white !important;
+        }
+    }
+}
+
+::placeholder,
+.zb-checkbox.label-present label {
+    color: var(--opera-gx-background-color-5) !important;
+}
+
+.zb-feedback .expanded-feedback .feedback-header-row .feedback-header,
+.static-container .static-container-title,
+.zb-simple-expandable .toggle-button .title {
+    color: white !important;
+}
+
+.progressionTool div.zyante-progression-status-bar {
+    background-color: var(--opera-gx-background-color) !important;
+    border-color: var(--opera-gx-accent-color-1) !important;
+
+    div.highlighted {
+        outline-color: var(--opera-gx-accent-color-1) !important;
+    }
+
+    div.filled {
+        background-color: var(--opera-gx-accent-color) !important;
+    }
+
+    div:not(:last-child) {
+        border-right-color: var(--opera-gx-accent-color-1) !important;
+    }
+}
+
+.activity-watermark {
+    color: var(--opera-gx-background-color-10-2) !important;
+}
+
+.button {
+    background-color: var(--opera-gx-accent-color) !important;
+
+    &.disabled {
+        background-color: rgba(var(--opera-gx-accent-color-rgb), 0.7) !important;
+    }
+}
+
+zyinstructions pre {
+    background-color: black !important;
+    color: rgb(0, 255, 0) !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+}
