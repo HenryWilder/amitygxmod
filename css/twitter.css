@@ -150,3 +150,47 @@ svg [stroke="#2F3336"] {
 *::-webkit-scrollbar-thumb:hover {
     background: var(--opera-gx-background-color-5);
 }
+
+[style*="background-color: rgb(29, 155, 240)"] {
+    background-color: var(--opera-gx-accent-color) !important;
+}
+
+[style*="color: rgb(113, 118, 123)"],
+.public-DraftEditorPlaceholder-inner {
+    color: var(--opera-gx-background-color-7) !important;
+}
+
+/* todo when found */
+.r-eok2q2,
+.r-1rfi0ky {
+    background-color: magenta !important;
+}
+
+.r-nf76sl {
+    caret-color: magenta !important;
+}
+
+.r-9cip40 {
+    box-shadow: 0 0 0 1px magenta !important;
+}
+
+.r-j0yx7z {
+    border-left-color: magenta !important;
+}
+
+.r-1ccsd61,
+.r-1ets6dv {
+    border-color: magenta !important;
+}
+
+/* Loading spinner */
+div[aria-label^="Loading"][role="progressbar"] svg>circle,
+.css-175oi2r.r-1awozwy.r-16y2uox.r-1777fci.r-1e081e0.r-tvv088>.css-175oi2r.r-1awozwy.r-1777fci>.css-175oi2r.r-17bb2tj.r-1muvv40.r-127358a.r-1ldzwu0>svg>circle {
+    stroke: var(--opera-gx-accent-color) !important;
+}
+
+/* mr. gorbachev, delete this wack ass button now. */
+a[href="/i/verified-choose"],
+:has(>a[href$="/highlights"]) {
+    display: none !important;
+}
