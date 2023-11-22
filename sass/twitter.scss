@@ -98,8 +98,13 @@ body {
 }
 
 nav .r-1nao33i,
+h1 a[href="/home"] svg,
 [style*="color: rgb(29, 155, 240)"] {
     color: var(--opera-gx-accent-color) !important;
+
+    path {
+        fill: var(--opera-gx-accent-color) !important;
+    }
 }
 
 svg [stroke="#1D9BF0"] {
@@ -184,8 +189,8 @@ svg [stroke="#2F3336"] {
 }
 
 /* Loading spinner */
-div[aria-label^="Loading"][role="progressbar"] svg>circle,
-.css-175oi2r.r-1awozwy.r-16y2uox.r-1777fci.r-1e081e0.r-tvv088>.css-175oi2r.r-1awozwy.r-1777fci>.css-175oi2r.r-17bb2tj.r-1muvv40.r-127358a.r-1ldzwu0>svg>circle {
+div[aria-label^="Loading"][role="progressbar"] svg > circle,
+.css-175oi2r.r-1awozwy.r-16y2uox.r-1777fci.r-1e081e0.r-tvv088 > .css-175oi2r.r-1awozwy.r-1777fci > .css-175oi2r.r-17bb2tj.r-1muvv40.r-127358a.r-1ldzwu0 > svg > circle {
     stroke: var(--opera-gx-accent-color) !important;
 }
 

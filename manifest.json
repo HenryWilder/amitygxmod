@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Amity GX",
-    "description": "I just want some dark themes for websites nobody else thinks to put them on.",
-    "version": "0.1",
+    "description": "I thought it'd be pretty neat :)",
+    "version": "0.2",
     "icons":
     {
         "512": "icon_512.png"
@@ -16,7 +16,54 @@
         "schema_version": 1,
         "payload":
         {
-            "background_music": [],
+            "wallpaper":
+            {
+                "dark":
+                {
+                    "image": "wallpaper/orbiting-russels-teapot.png",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#ffffff"
+                },
+                "light":
+                {
+                    "image": "wallpaper/amity-by-lenix.png",
+                    "text_color": "#000000",
+                    "text_shadow": "#000000"
+                }
+            },
+            "theme":
+            {
+                "dark":
+                {
+                    "gx_accent":
+                    {
+                        "h": 264,
+                        "s": 94,
+                        "l": 53
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 256,
+                        "s": 23,
+                        "l": 16
+                    }
+                },
+                "light":
+                {
+                    "gx_accent":
+                    {
+                        "h": 264,
+                        "s": 94,
+                        "l": 53
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 256,
+                        "s": 23,
+                        "l": 16
+                    }
+                }
+            },
             "page_styles":
             [
                 {
