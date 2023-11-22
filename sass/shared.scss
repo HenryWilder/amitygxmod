@@ -1,29 +1,34 @@
+@function opera-gx-background-color-x-rgb($x) {
+    $b: if($x>=5, 0, 1);
+    $m: if($x>=5, 1, 0.5);
+    $scale: $m * $x + $b;
+    @return calc(env(-opera-gx-background-color-r) * $scale), calc(env(-opera-gx-background-color-g) * $scale), calc(env(-opera-gx-background-color-b) * $scale);
+}
+
 :root {
-    --opera-gx-accent-color-rgb: env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b);
-    --opera-gx-accent-color: rgb(var(--opera-gx-accent-color-rgb));
+    @each $what in "accent", "background" {
+        --opera-gx-#{$what}-color-rgb: env(-opera-gx-#{$what}-color-r),
+        env(-opera-gx-#{$what}-color-g),
+        env(-opera-gx-#{$what}-color-b);
+        --opera-gx-#{$what}-color: rgb(var(--opera-gx-#{$what}-color-rgb));
 
-    --opera-gx-accent-color-hue-deg: calc(env(-opera-gx-accent-color-h) * 1deg);
-    --opera-gx-accent-color-sat: env(-opera-gx-accent-color-s);
-    --opera-gx-accent-color-lum: env(-opera-gx-accent-color-l);
+        --opera-gx-#{$what}-color-hue-deg: calc(env(-opera-gx-#{$what}-color-h) * 1deg);
+        --opera-gx-#{$what}-color-sat: env(-opera-gx-#{$what}-color-s);
+        --opera-gx-#{$what}-color-lum: env(-opera-gx-#{$what}-color-l);
+    }
 
-    --opera-gx-background-color-rgb: env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b);
-    --opera-gx-background-color: rgb(var(--opera-gx-background-color-rgb));
+    @for $i from 1 through 10 {
+        --opera-gx-background-color-#{$i}-rgb: #{opera-gx-background-color-x-rgb($i)};
+        --opera-gx-background-color-#{$i}: rgb(var(--opera-gx-background-color-#{$i}-rgb));
 
-    --opera-gx-background-color-1: rgb(calc(env(-opera-gx-background-color-r) * 1.5), calc(env(-opera-gx-background-color-g) * 1.5), calc(env(-opera-gx-background-color-b) * 1.5));
-    --opera-gx-background-color-2: rgb(calc(env(-opera-gx-background-color-r) * 2), calc(env(-opera-gx-background-color-g) * 2), calc(env(-opera-gx-background-color-b) * 2));
-    --opera-gx-background-color-3: rgb(calc(env(-opera-gx-background-color-r) * 2.5), calc(env(-opera-gx-background-color-g) * 2.5), calc(env(-opera-gx-background-color-b) * 2.5));
-    --opera-gx-background-color-4: rgb(calc(env(-opera-gx-background-color-r) * 4), calc(env(-opera-gx-background-color-g) * 4), calc(env(-opera-gx-background-color-b) * 4));
-    --opera-gx-background-color-5: rgb(calc(env(-opera-gx-background-color-r) * 5.5), calc(env(-opera-gx-background-color-g) * 5.5), calc(env(-opera-gx-background-color-b) * 5.5));
-    --opera-gx-background-color-7: rgb(calc(env(-opera-gx-background-color-r) * 7), calc(env(-opera-gx-background-color-g) * 7), calc(env(-opera-gx-background-color-b) * 7));
-    --opera-gx-background-color-8: rgb(calc(env(-opera-gx-background-color-r) * 8), calc(env(-opera-gx-background-color-g) * 8), calc(env(-opera-gx-background-color-b) * 8));
-    --opera-gx-background-color-10: rgb(calc(env(-opera-gx-background-color-r) * 10), calc(env(-opera-gx-background-color-g) * 10), calc(env(-opera-gx-background-color-b) * 10));
-    --opera-gx-background-color-10-1: color-mix(in srgb, var(--opera-gx-background-color-10) 80%, white);
-    --opera-gx-background-color-10-2: color-mix(in srgb, var(--opera-gx-background-color-10) 60%, white);
-    --opera-gx-background-color-10-3: color-mix(in srgb, var(--opera-gx-background-color-10) 40%, white);
-    --opera-gx-background-color-10-rgb: calc(env(-opera-gx-background-color-r) * 10), calc(env(-opera-gx-background-color-g) * 10), calc(env(-opera-gx-background-color-b) * 10);
+        @for $j from 1 through 4 {
+            $amount: 100% - ($j * 20%);
+            --opera-gx-background-color-#{$i}-#{$j}: color-mix(in srgb, var(--opera-gx-background-color-#{$i}) #{$amount}, white);
+        }
+    }
 
-    --opera-gx-accent-color-1: color-mix(in srgb, var(--opera-gx-accent-color) 80%, white);
-    --opera-gx-accent-color-2: color-mix(in srgb, var(--opera-gx-accent-color) 60%, white);
-    --opera-gx-accent-color-3: color-mix(in srgb, var(--opera-gx-accent-color) 40%, white);
-    --opera-gx-accent-color-4: color-mix(in srgb, var(--opera-gx-accent-color) 20%, white);
+    @for $i from 1 through 4 {
+        $amount: 100% - ($i * 20%);
+        --opera-gx-accent-color-#{$i}: color-mix(in srgb, var(--opera-gx-accent-color) #{$amount}, white);
+    }
 }
