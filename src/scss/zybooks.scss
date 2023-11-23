@@ -1,18 +1,16 @@
+@use 'shared/opera-gx-variables';
+@use 'zybooks-code';
+
 .route-container,
 body {
     background-color: var(--opera-gx-background-color) !important;
 }
 
-// .toolbar and .top-toolbar
-// not really necessary to do it this way, but it's neat to me that i can!!
-@each $x in "toolbar" {
-
-    .#{$x},
-    .top-#{$x} {
-        background-color: var(--opera-gx-background-color-1) !important;
-        box-shadow: none !important;
-        border-bottom: 1px solid var(--opera-gx-background-color-4) !important;
-    }
+.toolbar,
+.top-toolbar {
+    background-color: var(--opera-gx-background-color-1) !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid var(--opera-gx-background-color-4) !important;
 }
 
 @mixin toolbar-text {

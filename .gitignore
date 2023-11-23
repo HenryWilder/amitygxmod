@@ -1,2 +1,4 @@
-css/
+src/css/
 test/
+node_modules/
+package-lock.json

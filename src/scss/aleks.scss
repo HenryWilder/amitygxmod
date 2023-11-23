@@ -1,3 +1,5 @@
+@use 'shared/opera-gx-variables';
+
 body {
     background-color: var(--opera-gx-background-color) !important;
 }
@@ -17,7 +19,7 @@ span {
     color: var(--opera-gx-accent-color) !important;
 }
 
-div[role=heading]>div {
+div[role=heading] > div {
     border-bottom: 1px solid var(--opera-gx-background-color-4) !important;
 }
 
@@ -35,18 +37,18 @@ div[role=heading]>div {
 }
 
 [id^=ansed_answer] canvas {
-    filter: invert();
+    filter: #{"invert()"};
 }
 
-[id^=ansed_answer]>.ansed_root {
+[id^=ansed_answer] > .ansed_root {
     border: 1px solid white !important;
 }
 
-.ansed_tree>span {
+.ansed_tree > span {
     color: white !important;
 }
 
-#menubar_undefined_0_ansed>div {
+#menubar_undefined_0_ansed > div {
     background-color: var(--opera-gx-background-color-1) !important;
     border-color: var(--opera-gx-background-color-5) !important;
     box-shadow: none !important;
@@ -57,7 +59,7 @@ div[role=heading]>div {
 }
 
 img {
-    filter: invert() hue-rotate(calc(env(-opera-gx-accent-color-h) * 1deg)) !important;
+    filter: #{"invert()"} hue-rotate(calc(env(-opera-gx-accent-color-h) * 1deg)) !important;
 }
 
 svg * {
@@ -65,10 +67,10 @@ svg * {
 }
 
 #welcomePage,
-#main_algo_body.main_algo_aleks>*,
+#main_algo_body.main_algo_aleks > *,
 .tooltiptarget_banner,
 .tooltiptarget_bottomNavbar,
-.tooltiptarget_bottomNavbar+div {
+.tooltiptarget_bottomNavbar + div {
     max-width: 100% !important;
 }
 
@@ -77,7 +79,7 @@ svg * {
     border-bottom: 1px solid var(--opera-gx-background-color-3) !important;
 }
 
-#current-main-view>div.hide_print {
+#current-main-view > div.hide_print {
     right: 20px !important;
 }
 
@@ -90,7 +92,7 @@ svg * {
     bottom: 0 !important;
 }
 
-.tooltiptarget_bottomNavbar+div {
+.tooltiptarget_bottomNavbar + div {
     display: none !important;
 }
 
@@ -119,21 +121,21 @@ button.tooltiptarget_toggle_carousel {
     border-top-color: var(--opera-gx-background-color-5) !important;
 }
 
-.removeiframe>div:last-child {
+.removeiframe > div:last-child {
     background-color: black !important;
 }
 
-table button>div {
+table button > div {
     background-color: var(--opera-gx-background-color-2) !important;
     border-color: var(--opera-gx-background-color-5) !important;
     border-width: 1px !important;
 }
 
-table button>div>* {
+table button > div > * {
     color: var(--opera-gx-accent-color-3) !important;
 }
 
-table button>div>div:last-child {
+table button > div > div:last-child {
     background-color: var(--opera-gx-background-color-3) !important;
     border-color: var(--opera-gx-background-color-5) !important;
     bottom: 1px !important;
@@ -143,7 +145,7 @@ table button>div>div:last-child {
     border-bottom-right-radius: 9px !important;
 }
 
-table button svg+div {
+table button svg + div {
     color: var(--opera-gx-accent-color) !important;
 }
 
@@ -161,15 +163,15 @@ a {
     color: var(--opera-gx-accent-color) !important;
 }
 
-.aleks-ui-Tooltip .tipLocation-top>* {
+.aleks-ui-Tooltip .tipLocation-top > * {
     border-bottom-color: var(--opera-gx-background-color-5) !important;
 }
 
-.aleks-ui-Tooltip .tipLocation-top>:first-child {
+.aleks-ui-Tooltip .tipLocation-top > :first-child {
     top: 0 !important;
 }
 
-.aleks-ui-Tooltip .tipLocation-top>:last-child {
+.aleks-ui-Tooltip .tipLocation-top > :last-child {
     display: none !important;
 }
 
@@ -185,7 +187,7 @@ div.body3 {
     background-color: var(--opera-gx-background-color-1) !important;
 }
 
-.tooltiptarget_carousel>button {
+.tooltiptarget_carousel > button {
     background-color: var(--opera-gx-accent-color) !important;
 }
 

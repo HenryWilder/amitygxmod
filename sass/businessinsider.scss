@@ -1,8 +1,0 @@
-.tp-modal:has(>.tp-iframe-wrapper.tp-active>[id^="offer"][src^="https://buy.tinypass.com/checkout/offer/show"]),
-.tp-modal:has(>.tp-iframe-wrapper.tp-active>[id^="offer"][src^="https://buy.tinypass.com/checkout/offer/show"])+.tp-backdrop.tp-active {
-    display: none !important;
-}
-
-body.tp-modal-open {
-    overflow: visible !important;
-}

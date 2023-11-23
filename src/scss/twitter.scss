@@ -1,3 +1,5 @@
+@use 'shared/opera-gx-variables';
+
 body {
     background-color: var(--opera-gx-background-color) !important;
 }
@@ -23,7 +25,7 @@ body {
 }
 
 .r-qo02w8 {
-    box-shadow: rgba(var(--opera-gx-accent-color-rgb), 0.2) 0px 0px 15px, rgba(var(--opera-gx-accent-color-rgb), 0.15) 0px 0px 3px 1px !important;
+    box-shadow: rgba(var(--opera-gx-accent-color-rgb), 0.2) 0 0 15px, rgba(var(--opera-gx-accent-color-rgb), 0.15) 0 0 3px 1px !important;
 }
 
 .r-1tbvlxk {
@@ -31,7 +33,7 @@ body {
 }
 
 .r-19od9ir {
-    box-shadow: rgba(var(--opera-gx-accent-color-rgb), 0.2) 0px 2px 12px !important;
+    box-shadow: rgba(var(--opera-gx-accent-color-rgb), 0.2) 0 2px 12px !important;
 }
 
 .r-l5o3uw {

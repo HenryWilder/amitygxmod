@@ -73,7 +73,6 @@
                     ],
                     "css":
                     [
-                        "css/shared.css",
                         "css/aleks.css"
                     ]
                 },
@@ -84,7 +83,6 @@
                     ],
                     "css":
                     [
-                        "css/shared.css",
                         "css/cppreference.css"
                     ]
                 },
@@ -95,7 +93,6 @@
                     ],
                     "css":
                     [
-                        "css/shared.css",
                         "css/twitter.css"
                     ]
                 },
@@ -106,7 +103,6 @@
                     ],
                     "css":
                     [
-                        "css/shared.css",
                         "css/google.css"
                     ]
                 },
@@ -117,7 +113,6 @@
                     ],
                     "css":
                     [
-                        "css/shared.css",
                         "css/businessinsider.css"
                     ]
                 },
@@ -128,9 +123,7 @@
                     ],
                     "css":
                     [
-                        "css/shared.css",
-                        "css/zybooks.css",
-                        "css/zybooks-code.css"
+                        "css/zybooks.css"
                     ]
                 }
             ]
