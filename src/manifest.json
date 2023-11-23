@@ -3,137 +3,51 @@
     "name": "Amity GX",
     "description": "I thought it'd be pretty neat :)",
     "version": "0.2.1",
-    "icons":
-    {
-        "512": "icon_512.png"
-    },
-    "developer":
-    {
-        "name": "Amity Slime"
-    },
-    "mod":
-    {
+    "icons": { "512": "icon_512.png" },
+    "developer": { "name": "Amity Slime" },
+    "mod": {
         "schema_version": 1,
-        "payload":
-        {
-            "wallpaper":
-            {
-                "dark":
-                {
+        "payload": {
+            "wallpaper": {
+                "dark": {
                     "image": "wallpaper/orbiting-russels-teapot.png",
-                    "text_color": "#ffffff",
+                    "text_color":  "#ffffff",
                     "text_shadow": "#ffffff"
                 },
-                "light":
-                {
+                "light": {
                     "image": "wallpaper/amity-by-lenix.png",
-                    "text_color": "#000000",
+                    "text_color":  "#000000",
                     "text_shadow": "#000000"
                 }
             },
-            "theme":
-            {
-                "dark":
-                {
-                    "gx_accent":
-                    {
-                        "h": 264,
-                        "s": 94,
-                        "l": 53
-                    },
-                    "gx_secondary_base":
-                    {
-                        "h": 256,
-                        "s": 23,
-                        "l": 16
-                    }
+            "theme": {
+                "dark": {
+                    "gx_accent":         { "h": 264, "s":  94, "l":  53 },
+                    "gx_secondary_base": { "h": 256, "s":  23, "l":  16 }
                 },
-                "light":
-                {
-                    "gx_accent":
-                    {
-                        "h": 264,
-                        "s": 94,
-                        "l": 53
-                    },
-                    "gx_secondary_base":
-                    {
-                        "h": 256,
-                        "s": 23,
-                        "l": 16
-                    }
+                "light": {
+                    "gx_accent":         { "h": 264, "s":  94, "l":  53 },
+                    "gx_secondary_base": { "h": 256, "s":  23, "l":  16 }
                 }
             },
-            "page_styles":
-            [
-                {
-                    "matches":
-                    [
-                        "https://www-awu.aleks.com/*"
-                    ],
-                    "css":
-                    [
-                        "css/shared/opera-gx-variables.css",
-                        "css/aleks.css"
-                    ]
-                },
-                {
-                    "matches":
-                    [
-                        "https://*.cppreference.com/*"
-                    ],
-                    "css":
-                    [
-                        "css/shared/opera-gx-variables.css",
-                        "css/shared/vscode-variables.css",
-                        "css/cppreference.css",
-                        "css/cppreference-code.css"
-                    ]
-                },
-                {
-                    "matches":
-                    [
-                        "https://twitter.com/*"
-                    ],
-                    "css":
-                    [
-                        "css/shared/opera-gx-variables.css",
-                        "css/twitter.css"
-                    ]
-                },
-                {
-                    "matches":
-                    [
-                        "https://*.google.com/*"
-                    ],
-                    "css":
-                    [
-                        "css/shared/opera-gx-variables.css",
-                        "css/google.css"
-                    ]
-                },
-                {
-                    "matches":
-                    [
-                        "https://*.businessinsider.com/*"
-                    ],
-                    "css":
-                    [
-                        "css/businessinsider.css"
-                    ]
-                },
-                {
-                    "matches":
-                    [
-                        "https://*.zybooks.com/*"
-                    ],
-                    "css":
-                    [
-                        "css/shared/opera-gx-variables.css",
-                        "css/shared/vscode-variables.css",
-                        "css/zybooks.css",
-                        "css/zybooks-code.css"
-                    ]
+            "page_styles": [ {
+                    "matches": [ "https://www-awu.aleks.com/*" ],
+                    "css": [ "css/shared/opera-gx-variables.css", "css/aleks.css" ]
+                }, {
+                    "matches": [ "https://*.cppreference.com/*" ],
+                    "css": [ "css/shared/opera-gx-variables.css", "css/shared/vscode-variables.css", "css/cppreference.css", "css/cppreference-code.css" ]
+                }, {
+                    "matches": [ "https://twitter.com/*" ],
+                    "css": [ "css/shared/opera-gx-variables.css", "css/twitter.css" ]
+                }, {
+                    "matches": [ "https://www.google.com/*" ],
+                    "css": [ "css/shared/opera-gx-variables.css", "css/google.css" ]
+                }, {
+                    "matches": [ "https://*.businessinsider.com/*" ],
+                    "css": [ "css/businessinsider.css" ]
+                }, {
+                    "matches": [ "https://*.zybooks.com/*" ],
+                    "css": [ "css/shared/opera-gx-variables.css", "css/shared/vscode-variables.css", "css/zybooks.css", "css/zybooks-code.css" ]
                 }
             ]
         }
