@@ -73,6 +73,7 @@
                     ],
                     "css":
                     [
+                        "css/shared/opera-gx-variables.css",
                         "css/aleks.css"
                     ]
                 },
@@ -83,7 +84,10 @@
                     ],
                     "css":
                     [
-                        "css/cppreference.css"
+                        "css/shared/opera-gx-variables.css",
+                        "css/shared/vscode-variables.css",
+                        "css/cppreference.css",
+                        "css/cppreference-code.css"
                     ]
                 },
                 {
@@ -93,6 +97,7 @@
                     ],
                     "css":
                     [
+                        "css/shared/opera-gx-variables.css",
                         "css/twitter.css"
                     ]
                 },
@@ -103,6 +108,7 @@
                     ],
                     "css":
                     [
+                        "css/shared/opera-gx-variables.css",
                         "css/google.css"
                     ]
                 },
@@ -123,7 +129,10 @@
                     ],
                     "css":
                     [
-                        "css/zybooks.css"
+                        "css/shared/opera-gx-variables.css",
+                        "css/shared/vscode-variables.css",
+                        "css/zybooks.css",
+                        "css/zybooks-code.css"
                     ]
                 }
             ]
