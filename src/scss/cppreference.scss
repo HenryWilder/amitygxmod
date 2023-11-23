@@ -98,7 +98,7 @@ ul {
     }
 
     li::marker {
-        color: var(--link-color) !important;
+        color: $link-color !important;
     }
 }
 
@@ -220,20 +220,20 @@ table {
 a {
 
     &:not(:visited) {
-        color: var(--link-color) !important;
+        color: $link-color !important;
     }
 
     &:visited {
-        color: var(--link-visited-color) !important;
+        color: $link-visited-color !important;
     }
 }
 
 // selflink
 strong.selflink {
-    color: var(--selflink-color) !important;
+    color: $selflink-color !important;
 }
 
 // "Run this code" buttons
 .coliru-btn {
-    background: var(--link-color) !important;
+    background: $link-color !important;
 }

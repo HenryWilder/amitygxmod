@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Amity GX",
     "description": "I thought it'd be pretty neat :)",
-    "version": "0.2",
+    "version": "0.2.1",
     "icons":
     {
         "512": "icon_512.png"
