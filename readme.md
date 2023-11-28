@@ -1,5 +1,27 @@
 # Amity GX Mod
 
+## Included features
+
+- [Theme](#theme)
+- [Wallpaper](#wallpaper)
+- [Webmods](#webmods)
+
+## Theme
+
+| Theme | Background | Accent |
+| ----- | :--------: | :----: |
+| light | [todo] | [todo] |
+| dark  | [todo] | [todo] |
+
+## Wallpaper
+
+| Theme | Wallpaper |
+| ----- | --------- |
+| light | [Amity](./src/wallpaper/amity-by-lenix.png) &mdash; Created by [Len](https://twitter.com/lenix_tt) [![](./src/wallpaper/amity-by-lenix.png)](./src/wallpaper/amity-by-lenix.png) |
+| dark  | [Orbiting Russel's Teapot](./src/wallpaper/orbiting-russels-teapot.png) &mdash; Created by [Amity Slime](https://twitter.com/amysmilebatto) [![](./src/wallpaper/orbiting-russels-teapot.png)](./src/wallpaper/orbiting-russels-teapot.png) |
+
+## Webmods
+
 The webmods more or less just makes certain sites more theme-friendly.
 
 | Webmod                                          | Status       |
