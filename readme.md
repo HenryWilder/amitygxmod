@@ -17,8 +17,8 @@
 
 | Theme | Wallpaper[^1] |
 | :---: | :-----------: |
-| light | [Amity](./src/wallpaper/amity-by-lenix.png) &mdash; Created by [Len](https://twitter.com/lenix_tt) [![](./src/wallpaper/amity-by-lenix.png)](./src/wallpaper/amity-by-lenix.png) |
-| dark  | [Orbiting Russel's Teapot](./src/wallpaper/orbiting-russels-teapot.png) &mdash; Created by [Amity Slime](https://twitter.com/amysmilebatto) [![](./src/wallpaper/orbiting-russels-teapot.png)](./src/wallpaper/orbiting-russels-teapot.png) |
+| light | [Amity](./src/wallpaper/amity-by-lenix.png) &mdash; Created by [Len](https://twitter.com/lenix_tt) ![](./src/wallpaper/amity-by-lenix.png) |
+| dark  | [Orbiting Russel's Teapot](./src/wallpaper/orbiting-russels-teapot.png) &mdash; Created by [Amity Slime](https://twitter.com/amysmilebatto) ![](./src/wallpaper/orbiting-russels-teapot.png) |
 
 [^1]: I own the rights to all images used in this project.
 
