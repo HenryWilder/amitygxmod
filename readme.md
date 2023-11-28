@@ -9,10 +9,10 @@ The webmods more or less just makes certain sites more theme-friendly.
 | [zyBooks](https://zybooks.com/)                 | in progress  |
 | [Google](https://google.com/)                   | in progress  |
 | [ALEKS](https://aleks.com/)                     | in progress  |
-| [MDN docs](https://developer.mozilla.org/)      | todo         |
-| [GitHub](https://github.com/)                   | todo         |
-| [Microsoft Learn](https://learn.microsoft.com/) | todo         |
-| [YouTube](https://youtube.com/)                 | todo         |
+| [MDN docs](https://developer.mozilla.org/)      | not started  |
+| [GitHub](https://github.com/)                   | not started  |
+| [Microsoft Learn](https://learn.microsoft.com/) | not started  |
+| [YouTube](https://youtube.com/)                 | not started  |
 
 [^1]: Status of "complete" does not mean I won't work on it further if bugs are brought to my attention.
 
