@@ -10,8 +10,8 @@
 
 | Theme | Background | Accent |
 | ----- | :--------: | :----: |
-| light | [todo] | [todo] |
-| dark  | [todo] | [todo] |
+| light | h:256, s:23, l:16 | h:264, s:94, l:53 |
+| dark  | h:256, s:23, l:88 | h:264, s:94, l:53 |
 
 ## Wallpaper
 
