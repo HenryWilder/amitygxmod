@@ -8,10 +8,10 @@
 
 ## Theme
 
-| Theme | Background                  | Accent                      |
-| ----- | :-------------------------: | :-------------------------: |
-| light | h:256, s:23, l:16 `#241F32` | h:264, s:94, l:53 `#7116F8` |
-| dark  | h:256, s:23, l:88 `#DDD9E7` | h:264, s:94, l:53 `#7116F8` |
+| Theme | Background | Accent |
+| ----- | :--------: | :----: |
+| light | ![#241F32](https://via.placeholder.com/15/241F32/000000?text=+) hsl(256, 23%, 16%) | ![#7116F8](https://via.placeholder.com/15/7116F8/000000?text=+) hsl(264, 94%, 53%) |
+| dark  | ![#DDD9E7](https://via.placeholder.com/15/DDD9E7/000000?text=+) hsl(256, 23%, 88%) | ![#7116F8](https://via.placeholder.com/15/7116F8/000000?text=+) hsl(264, 94%, 53%) |
 
 ## Wallpaper
 
