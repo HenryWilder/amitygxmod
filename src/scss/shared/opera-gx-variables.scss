@@ -68,4 +68,11 @@
         $amount: 100% - ($i * 20%);
         --opera-gx-accent-color-#{$i}: color-mix(in srgb, var(--opera-gx-accent-color) #{$amount}, white);
     }
+
+    --cp-size: 10px;
+}
+
+@mixin gx-clip-path($size: var(--cp-size)) {
+    clip-path: polygon($size 0, 100% 0, 100% calc(100% - $size), calc(100% - $size) 100%, 0 100%, 0 $size);
+    border-radius: 0;
 }
