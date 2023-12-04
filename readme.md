@@ -8,16 +8,16 @@
 
 ## Theme
 
-| Theme | Background | Accent |
-| :---: | :--------: | :----: |
+| Theme | Background                                                                         | Accent                                                                             |
+| :---: | :--------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
 | light | ![#241F32](https://via.placeholder.com/15/241F32/000000?text=+) hsl(256, 23%, 16%) | ![#7116F8](https://via.placeholder.com/15/7116F8/000000?text=+) hsl(264, 94%, 53%) |
 | dark  | ![#DDD9E7](https://via.placeholder.com/15/DDD9E7/000000?text=+) hsl(256, 23%, 88%) | ![#7116F8](https://via.placeholder.com/15/7116F8/000000?text=+) hsl(264, 94%, 53%) |
 
 ## Wallpaper
 
-| Theme | Wallpaper[^1] |
-| :---: | :-----------: |
-| light | [Amity](./src/wallpaper/amity-by-lenix.png) &mdash; Created by [Len](https://twitter.com/lenix_tt) ![](./src/wallpaper/amity-by-lenix.png) |
+| Theme | Wallpaper[^1]                                                                                                                                                                                |
+| :---: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| light | [Amity](./src/wallpaper/amity-by-lenix.png)                             &mdash; Created by [Len](https://twitter.com/lenix_tt)              ![](./src/wallpaper/amity-by-lenix.png)          |
 | dark  | [Orbiting Russel's Teapot](./src/wallpaper/orbiting-russels-teapot.png) &mdash; Created by [Amity Slime](https://twitter.com/amysmilebatto) ![](./src/wallpaper/orbiting-russels-teapot.png) |
 
 [^1]: I own the rights to all images used in this project.
@@ -26,17 +26,17 @@
 
 The webmods more or less just makes certain sites more theme-friendly.
 
-| Webmod                                          | Status       | Issues                                                                                                            | Example                                                           |
-| :---------------------------------------------- | :----------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
-| [Twitter](https://twitter.com/)                 | complete[^2] | [Twitter webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+Twitter")           | ![Twitter webmod preview](./images/preview-twitter.png)           |
-| [cppreference](https://cppreference.com/)       | complete[^2] | [cppreference webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+cppreference") | ![cppreference webmod preview](./images/preview-cppreference.png) |
-| [zyBooks](https://zybooks.com/)                 | in progress  | [zyBooks webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+zyBooks")           | ![zyBooks webmod preview](./images/preview-zybooks.png)           |
-| [Google](https://google.com/)                   | in progress  | [Google webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+Google")             | ![Google webmod preview](./images/preview-google.png)             |
-| [ALEKS](https://aleks.com/)                     | in progress  | [ALEKS webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+ALEKS")               | ![ALEKS webmod preview](./images/preview-aleks.png)               |
-| [MDN docs](https://developer.mozilla.org/)      | not started  | n/a                                                                                                               | n/a                                                               |
-| [GitHub](https://github.com/)                   | not started  | n/a                                                                                                               | n/a                                                               |
-| [Microsoft Learn](https://learn.microsoft.com/) | not started  | n/a                                                                                                               | n/a                                                               |
-| [YouTube](https://youtube.com/)                 | not started  | n/a                                                                                                               | n/a                                                               |
+| Webmod                                          | Status                            | Issues                                                                    | Example                                                           |
+| :---------------------------------------------- | :-------------------------------: | :-----------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| [Twitter](https://twitter.com/)                 | complete[^2]                      | [Twitter webmod issues](./issues?q=label%3A"webmod%3A+Twitter")           | ![Twitter webmod preview](./images/preview-twitter.png)           |
+| [cppreference](https://cppreference.com/)       | complete[^2]                      | [cppreference webmod issues](./issues?q=label%3A"webmod%3A+cppreference") | ![cppreference webmod preview](./images/preview-cppreference.png) |
+| [zyBooks](https://zybooks.com/)                 | [in progress](./tree/development) | [zyBooks webmod issues](./issues?q=label%3A"webmod%3A+zyBooks")           | ![zyBooks webmod preview](./images/preview-zybooks.png)           |
+| [Google](https://google.com/)                   | [in progress](./tree/development) | [Google webmod issues](./issues?q=label%3A"webmod%3A+Google")             | ![Google webmod preview](./images/preview-google.png)             |
+| [ALEKS](https://aleks.com/)                     | [in progress](./tree/development) | [ALEKS webmod issues](./issues?q=label%3A"webmod%3A+ALEKS")               | ![ALEKS webmod preview](./images/preview-aleks.png)               |
+| [MDN docs](https://developer.mozilla.org/)      | not started                       | n/a                                                                       | n/a                                                               |
+| [GitHub](https://github.com/)                   | not started                       | n/a                                                                       | n/a                                                               |
+| [Microsoft Learn](https://learn.microsoft.com/) | not started                       | n/a                                                                       | n/a                                                               |
+| [YouTube](https://youtube.com/)                 | not started                       | n/a                                                                       | n/a                                                               |
 
 [^2]: Status of "complete" does not mean I won't work on it further if bugs are brought to my attention.
 
