@@ -26,17 +26,17 @@
 
 The webmods more or less just makes certain sites more theme-friendly.
 
-| Webmod                                          | Status       | Example |
-| :---------------------------------------------- | :----------: | :-----: |
-| [Twitter](https://twitter.com/)                 | complete[^2] | ![Twitter webmod preview](./images/preview-twitter.png) |
-| [cppreference](https://cppreference.com/)       | complete[^2] | ![cppreference webmod preview](./images/preview-cppreference.png) |
-| [zyBooks](https://zybooks.com/)                 | in progress  | ![zyBooks webmod preview](./images/preview-zybooks.png) |
-| [Google](https://google.com/)                   | in progress  | ![Google webmod preview](./images/preview-google.png) |
-| [ALEKS](https://aleks.com/)                     | in progress  | ![ALEKS webmod preview](./images/preview-aleks.png) |
-| [MDN docs](https://developer.mozilla.org/)      | not started  | |
-| [GitHub](https://github.com/)                   | not started  | |
-| [Microsoft Learn](https://learn.microsoft.com/) | not started  | |
-| [YouTube](https://youtube.com/)                 | not started  | |
+| Webmod                                          | Status       | Issues                                                                                                            | Example                                                           |
+| :---------------------------------------------- | :----------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| [Twitter](https://twitter.com/)                 | complete[^2] | [Twitter webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+Twitter")           | ![Twitter webmod preview](./images/preview-twitter.png)           |
+| [cppreference](https://cppreference.com/)       | complete[^2] | [cppreference webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+cppreference") | ![cppreference webmod preview](./images/preview-cppreference.png) |
+| [zyBooks](https://zybooks.com/)                 | in progress  | [zyBooks webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+zyBooks")           | ![zyBooks webmod preview](./images/preview-zybooks.png)           |
+| [Google](https://google.com/)                   | in progress  | [Google webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+Google")             | ![Google webmod preview](./images/preview-google.png)             |
+| [ALEKS](https://aleks.com/)                     | in progress  | [ALEKS webmod issues](https://github.com/HenryWilder/amitygxmod/issues?q=label%3A"webmod%3A+ALEKS")               | ![ALEKS webmod preview](./images/preview-aleks.png)               |
+| [MDN docs](https://developer.mozilla.org/)      | not started  | n/a                                                                                                               | n/a                                                               |
+| [GitHub](https://github.com/)                   | not started  | n/a                                                                                                               | n/a                                                               |
+| [Microsoft Learn](https://learn.microsoft.com/) | not started  | n/a                                                                                                               | n/a                                                               |
+| [YouTube](https://youtube.com/)                 | not started  | n/a                                                                                                               | n/a                                                               |
 
 [^2]: Status of "complete" does not mean I won't work on it further if bugs are brought to my attention.
 
