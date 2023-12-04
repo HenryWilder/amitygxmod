@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Amity GX",
     "description": "I thought it'd be pretty neat :)",
-    "version": "0.2.1",
+    "version": "0.2.2-dev",
     "icons": { "512": "icon_512.png" },
     "developer": { "name": "Amity Slime" },
     "mod": {
