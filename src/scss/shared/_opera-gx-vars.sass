@@ -22,6 +22,8 @@ $palette-gx-no-96:  #{palette-gx-no( 96)}
 $palette-gx-no-98:  #{palette-gx-no( 98)}
 $palette-gx-no-100: #{palette-gx-no(100)}
 
+$opera-gx-accent-color-rgb: var(--opera-gx-accent-color-rgb)
+
 @function palette-gx-accent-l($n)
     @return var(--palette-gx-accent-l-#{$n})
 
@@ -104,5 +106,5 @@ $opera-unchecked-radio-color: opera-var('unchecked-radio')
 
 @mixin gx-clip-path
     $size: var(--clip-path-size)
-    clip-path: polygon($size 0, 100% 0, 100% calc(100% - $size), calc(100% - $size) 100%, 0 100%, 0 $size)
-    border-radius: 0
+    clip-path: polygon($size 0, 100% 0, 100% calc(100% - $size), calc(100% - $size) 100%, 0 100%, 0 $size) !important
+    border-radius: 0 !important

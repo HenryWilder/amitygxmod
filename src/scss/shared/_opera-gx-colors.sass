@@ -14,6 +14,7 @@
     $accent-r: env(-opera-gx-accent-color-r)
     $accent-g: env(-opera-gx-accent-color-g)
     $accent-b: env(-opera-gx-accent-color-b)
+    --opera-gx-accent-color-rgb: #{$accent-r $accent-g $accent-b}
 
     @function scale($comp, $n)
         $scalar: math.div($n, 100)
@@ -67,7 +68,7 @@
     --opera-modal-header-color:     var(--palette-gx-no-88)
 
     --opera-primary-button-background-color:       var(--palette-gx-accent)
-    --opera-primary-button-background-color-hover: var(--palette-gx-accent)
+    --opera-primary-button-background-color-hover: var(--palette-gx-accent-l-120)
     --opera-primary-button-border-color:           var(--opera-secondary-color)
     --opera-primary-button-font-color:             var(--opera-gx-font-color)
 
@@ -123,7 +124,7 @@
         --opera-modal-header-color:     var(--palette-gx-no-16)
 
         --opera-primary-button-background-color:       var(--palette-gx-accent)
-        --opera-primary-button-background-color-hover: var(--palette-gx-accent)
+        --opera-primary-button-background-color-hover: var(--palette-gx-accent-l-120)
         --opera-primary-button-border-color:           var(--opera-secondary-color)
         --opera-primary-button-font-color:             var(--opera-gx-font-color)
 

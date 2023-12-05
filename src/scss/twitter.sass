@@ -18,20 +18,22 @@ body, .r-kemksi
     background: $opera-button-border-color !important
 
 .r-qo02w8
-    box-shadow: rgba(var(--opera-gx-accent-color-rgb), 0.2) 0 0 15px, rgba(var(--opera-gx-accent-color-rgb), 0.15) 0 0 3px 1px !important
+    box-shadow: rgba($opera-gx-accent-color-rgb, 0.2) 0 0 15px, rgba($opera-gx-accent-color-rgb, 0.15) 0 0 3px 1px !important
 
 .r-1tbvlxk
-    filter: drop-shadow(rgba(var(--opera-gx-accent-color-rgb), 0.2) 1px -1px 1px) !important
+    filter: drop-shadow(rgba($opera-gx-accent-color-rgb, 0.2) 1px -1px 1px) !important
 
 .r-19od9ir
-    box-shadow: rgba(var(--opera-gx-accent-color-rgb), 0.2) 0 2px 12px !important
+    box-shadow: rgba($opera-gx-accent-color-rgb, 0.2) 0 2px 12px !important
 
 .r-l5o3uw, [style*="background-color: rgb(29, 155, 240)"]
-    background-color: $opera-primary-color !important
+    &:active
+        background-color: $opera-button-background-color-pressed !important
+    background-color: $opera-primary-button-background-color !important
 
-/* hovered */
+/* tweet button hovered */
 .r-1vtznih
-    background-color: rgba(var(--opera-gx-accent-color-rgb), 0.8) !important
+    background-color: $opera-primary-button-background-color-hover !important
 
 .r-1cvl2hr, [style*="color: rgb(239, 243, 244)"], %accent-text
     color: $opera-primary-color !important
@@ -48,14 +50,11 @@ nav .r-1nao33i, h1 a[href="/home"] svg, [style*="color: rgb(29, 155, 240)"]
 .r-1pbtemp
     border-right-color: $opera-primary-color !important
 
-.r-1roi411, .r-1kqtdi0
+.r-1roi411, .r-1kqtdi0, .r-1kqtdi0, .r-14wv3jr
     border-color: $opera-separator-color !important
 
 .r-1igl3o0
     border-bottom-color: $opera-separator-color !important
-
-.r-14wv3jr
-    border-color: $opera-separator-color !important
 
 .r-1bwzh9t, .css-1qaijid[style*="color: rgb(113, 118, 123)"], .public-DraftEditorPlaceholder-inner, ::placeholder
     color: var(--opera-gx-background-color-7) !important
@@ -76,18 +75,20 @@ svg [stroke="#2F3336"]
     stroke: var(--opera-gx-background-color-3) !important
 
 .r-1hdo0pc, .r-1peqgm7
-    background-color: rgba(var(--opera-gx-background-color-10-rgb), 0.1) !important
+    background-color: $opera-secondary-background-color !important // 0.1 opacity
 
 .r-r18ze4
-    background-color: rgba(var(--opera-gx-background-color-10-rgb), 0.2) !important
+    background-color: $opera-secondary-background-color !important // 0.2 opacity
 
 .r-qazpri
     color: var(--opera-gx-background-color-5) !important
 
 .r-eff69c
+    background: $opera-secondary-background-color !important
     // @include opera-gx-background(8)
 
 .r-yuvema
+    background: $opera-secondary-background-color !important
     // @include opera-gx-background(7)
 
 .r-vhj8yc
@@ -132,6 +133,10 @@ svg [stroke="#1D9BF0"]
 a[href="/i/verified-choose"], :has(>a[href$="/highlights"])
     @include hidden
 
-/* Hovered links */
-.r-1hdo0pc
+/* Rounded -> box */
+.r-sdzlij, .r-1kqtdi0, .r-1867qdf
     @include gx-clip-path
+
+div[aria-label="Timeline: Messages"] [role="tablist"] > [data-testid="cellInnerDiv"]
+    &, & [data-testid="activeRoute"]
+        @include gx-clip-path
