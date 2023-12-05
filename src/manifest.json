@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Amity GX",
     "description": "I thought it'd be pretty neat :)",
-    "version": "0.2.2-dev",
+    "version": "0.2.3",
     "icons": { "512": "icon_512.png" },
     "developer": { "name": "Amity Slime" },
     "mod": {
@@ -32,22 +32,22 @@
             },
             "page_styles": [ {
                     "matches": [ "https://www-awu.aleks.com/*" ],
-                    "css": [ "css/aleks.css" ]
+                    "css": [ "css/opera-gx-colors.css", "css/aleks.css" ]
                 }, {
                     "matches": [ "https://*.cppreference.com/*" ],
-                    "css": [ "css/cppreference.css" ]
+                    "css": [ "css/opera-gx-colors.css", "css/vscode-colors.css", "css/cppreference.css" ]
                 }, {
                     "matches": [ "https://twitter.com/*" ],
-                    "css": [ "css/twitter.css" ]
+                    "css": [ "css/opera-gx-colors.css", "css/twitter.css" ]
                 }, {
                     "matches": [ "https://www.google.com/*" ],
-                    "css": [ "css/google.css" ]
+                    "css": [ "css/opera-gx-colors.css", "css/google.css" ]
                 }, {
                     "matches": [ "https://*.businessinsider.com/*" ],
-                    "css": [ "css/businessinsider.css" ]
+                    "css": [ "css/opera-gx-colors.css", "css/businessinsider.css" ]
                 }, {
                     "matches": [ "https://*.zybooks.com/*" ],
-                    "css": [ "css/zybooks.css" ]
+                    "css": [ "css/opera-gx-colors.css", "css/vscode-colors.css", "css/zybooks.css" ]
                 }
             ]
         }

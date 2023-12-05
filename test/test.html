@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style test</title>
+    <link rel="stylesheet" href="/dist/css/opera-gx-colors.css">
+    <link rel="stylesheet" href="/dist/css/vscode-colors.css">
+    <style>
+        body {
+            background-color: var(--palette-gx-no-100);
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: var(--palette-gx-no-0);
+            }
+        }
+        .test {
+            display: inline-block;
+            padding: 1ch;
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-region"></div>
+    <script>
+        (() => {
+            const testRegion = document.getElementById('test-region');
+
+            const addTest = (color, text) => {
+                const el = document.createElement('span');
+                testRegion.appendChild(el);
+                el.classList.add('test');
+                el.style.backgroundColor = color;
+                el.innerText = text;
+                console.log(`Created element`, el);
+            };
+            const lineBreak = () => testRegion.appendChild(document.createElement('br'));
+
+            const paletteNos = [0, 4, 8, 12, 16, 20, 24, 32, 40, 59, 77, 80, 88, 90, 92, 96, 98, 100];
+            for (const no of paletteNos) {
+                addTest(`var(--palette-gx-no-${no})`, `no-${no}`);
+            }
+
+            lineBreak();
+
+            const paletteAccents = [8, 16, 24, 30, 60, 80, 100, 120, 140, 160];
+            for (const accent of paletteAccents) {
+                addTest(`var(--palette-gx-accent-l-${accent})`, `accent-${accent}`);
+            }
+
+            lineBreak();
+
+            addTest(`var(--opera-background-color)`, `background`);
+            addTest(`var(--opera-secondary-background-color)`, `secondary-background`);
+        })()
+    </script>
+</body>
+</html>

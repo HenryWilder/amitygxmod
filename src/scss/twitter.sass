@@ -1,11 +1,8 @@
-@import 'shared'
-@import 'opera-gx-vars'
-
-@mixin opera-gx-background($n: 0)
-    background-color: palette-gx-accent-l($n) !important
+@import 'shared/helpers'
+@import 'shared/opera-gx-vars'
 
 body, .r-kemksi
-    @include opera-gx-background()
+    background: $palette-gx-no-100 !important
 
 .r-5zmot
     background-color: rgba(var(--opera-gx-background-color-rgb), 0.65) !important
@@ -14,6 +11,7 @@ body, .r-kemksi
     color: var(--opera-gx-background-color) !important
 
 .r-g2wdr4
+    background: $palette-gx-no-12
     @include opera-gx-background(1)
 
 .r-z32n2g, .r-gu4em3

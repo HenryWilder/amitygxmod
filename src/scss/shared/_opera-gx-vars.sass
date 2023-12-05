@@ -1,0 +1,47 @@
+@function palette-gx-no($n)
+    @return var(--palette-gx-no-#{$n})
+
+$palette-gx-no-0:   #{palette-gx-no(  0)}
+$palette-gx-no-4:   #{palette-gx-no(  4)}
+$palette-gx-no-8:   #{palette-gx-no(  8)}
+$palette-gx-no-12:  #{palette-gx-no( 12)}
+$palette-gx-no-16:  #{palette-gx-no( 16)}
+$palette-gx-no-20:  #{palette-gx-no( 20)}
+$palette-gx-no-24:  #{palette-gx-no( 24)}
+$palette-gx-no-32:  #{palette-gx-no( 32)}
+$palette-gx-no-40:  #{palette-gx-no( 40)}
+$palette-gx-no-59:  #{palette-gx-no( 59)}
+$palette-gx-no-77:  #{palette-gx-no( 77)}
+$palette-gx-no-80:  #{palette-gx-no( 80)}
+$palette-gx-no-88:  #{palette-gx-no( 88)}
+$palette-gx-no-90:  #{palette-gx-no( 90)}
+$palette-gx-no-92:  #{palette-gx-no( 92)}
+$palette-gx-no-96:  #{palette-gx-no( 96)}
+$palette-gx-no-98:  #{palette-gx-no( 98)}
+$palette-gx-no-100: #{palette-gx-no(100)}
+
+@function palette-gx-accent-l($n)
+    @return var(--palette-gx-accent-l-#{$n})
+
+$palette-gx-accent-l-8:   #{palette-gx-accent-l(  8)}
+$palette-gx-accent-l-16:  #{palette-gx-accent-l( 16)}
+$palette-gx-accent-l-24:  #{palette-gx-accent-l( 24)}
+$palette-gx-accent-l-30:  #{palette-gx-accent-l( 30)}
+$palette-gx-accent-l-60:  #{palette-gx-accent-l( 60)}
+$palette-gx-accent-l-80:  #{palette-gx-accent-l( 80)}
+$palette-gx-accent-l-100: #{palette-gx-accent-l(100)}
+$palette-gx-accent-l-120: #{palette-gx-accent-l(120)}
+$palette-gx-accent-l-140: #{palette-gx-accent-l(140)}
+$palette-gx-accent-l-160: #{palette-gx-accent-l(160)}
+$palette-gx-accent: $palette-gx-accent-l-100
+
+$opera-secondary-font-color: var(--opera-secondary-font-color)
+$opera-font-color: var(--opera-font-color)
+
+$opera-tile-background-color: var(--opera-tile-background-color)
+$opera-tile-border-color: var(--opera-tile-border-color)
+
+@mixin gx-clip-path
+    $size: var(--clip-path-size)
+    clip-path: polygon($size 0, 100% 0, 100% calc(100% - $size), calc(100% - $size) 100%, 0 100%, 0 $size)
+    border-radius: 0
