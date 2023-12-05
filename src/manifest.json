@@ -32,22 +32,22 @@
             },
             "page_styles": [ {
                     "matches": [ "https://www-awu.aleks.com/*" ],
-                    "css": [ "css/shared/opera-gx-variables.css", "css/aleks.css" ]
+                    "css": [ "css/aleks.css" ]
                 }, {
                     "matches": [ "https://*.cppreference.com/*" ],
-                    "css": [ "css/shared/opera-gx-variables.css", "css/shared/vscode-variables.css", "css/cppreference.css", "css/cppreference-code.css" ]
+                    "css": [ "css/cppreference.css" ]
                 }, {
                     "matches": [ "https://twitter.com/*" ],
-                    "css": [ "css/shared/opera-gx-variables.css", "css/twitter.css" ]
+                    "css": [ "css/twitter.css" ]
                 }, {
                     "matches": [ "https://www.google.com/*" ],
-                    "css": [ "css/shared/opera-gx-variables.css", "css/google.css" ]
+                    "css": [ "css/google.css" ]
                 }, {
                     "matches": [ "https://*.businessinsider.com/*" ],
                     "css": [ "css/businessinsider.css" ]
                 }, {
                     "matches": [ "https://*.zybooks.com/*" ],
-                    "css": [ "css/shared/opera-gx-variables.css", "css/shared/vscode-variables.css", "css/zybooks.css", "css/zybooks-code.css" ]
+                    "css": [ "css/zybooks.css" ]
                 }
             ]
         }
