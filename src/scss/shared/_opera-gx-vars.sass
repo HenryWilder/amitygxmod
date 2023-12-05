@@ -1,3 +1,5 @@
+@import 'opera-gx-colors'
+
 @function palette-gx-no($n)
     @return var(--palette-gx-no-#{$n})
 
@@ -35,65 +37,70 @@ $palette-gx-accent-l-140: #{palette-gx-accent-l(140)}
 $palette-gx-accent-l-160: #{palette-gx-accent-l(160)}
 $palette-gx-accent: $palette-gx-accent-l-100
 
-$opera-background-color: #{var(--opera-background-color)}
+@function opera-var($name, $suffix: null)
+    $suffix-full: if($suffix!=null, #{'-'+$suffix}, '')
+    @return #{var(--opera-#{$name}-color#{$suffix-full})}
 
-$opera-button-background-color:          #{var(--opera-button-background-color)}
-$opera-button-background-color-hover:    #{var(--opera-button-background-color-hover)}
-$opera-button-background-color-pressed:  #{var(--opera-button-background-color-pressed)}
-$opera-button-border-color:              #{var(--opera-button-border-color)}
-$opera-button-disabled-background-color: #{var(--opera-button-disabled-background-color)}
-$opera-button-disabled-border-color:     #{var(--opera-button-disabled-border-color)}
+$opera-background-color:     opera-var('background')
+$opera-background-color-hsl: opera-var('background', 'hsl')
 
-$opera-controls-disabled-color:      #{var(--opera-controls-disabled-color)}
-$opera-controls-primary-color:       #{var(--opera-controls-primary-color)}
-$opera-controls-primary-focus-color: #{var(--opera-controls-primary-focus-color)}
-$opera-controls-primary-hover-color: #{var(--opera-controls-primary-hover-color)}
+$opera-button-background-color:          opera-var('button-background')
+$opera-button-background-color-hover:    opera-var('button-background', 'hover')
+$opera-button-background-color-pressed:  opera-var('button-background', 'pressed')
+$opera-button-border-color:              opera-var('button-border')
+$opera-button-disabled-background-color: opera-var('button-disabled-background')
+$opera-button-disabled-border-color:     opera-var('button-disabled-border')
 
-$opera-focus-outline-color: #{var(--opera-focus-outline-color)}
+$opera-controls-disabled-color:      opera-var('controls-disabled')
+$opera-controls-primary-color:       opera-var('controls-primary')
+$opera-controls-primary-focus-color: opera-var('controls-primary-focus')
+$opera-controls-primary-hover-color: opera-var('controls-primary-hover')
 
-$opera-input-background-color:         #{var(--opera-input-background-color)}
-$opera-input-background-color-hover:   #{var(--opera-input-background-color-hover)}
-$opera-input-background-color-pressed: #{var(--opera-input-background-color-pressed)}
-$opera-input-border-color:             #{var(--opera-input-border-color)}
+$opera-focus-outline-color: opera-var('focus-outline')
 
-$opera-link-color:                  #{var(--opera-link-color)}
-$opera-link-focus-background-color: #{var(--opera-link-focus-background-color)}
-$opera-link-hover-background-color: #{var(--opera-link-hover-background-color)}
+$opera-input-background-color:         opera-var('input-background')
+$opera-input-background-color-hover:   opera-var('input-background', 'hover')
+$opera-input-background-color-pressed: opera-var('input-background', 'pressed')
+$opera-input-border-color:             opera-var('input-border')
 
-$opera-modal-background-color: #{var(--opera-modal-background-color)}
-$opera-modal-border-color:     #{var(--opera-modal-border-color)}
-$opera-modal-header-color:     #{var(--opera-modal-header-color)}
+$opera-link-color:                  opera-var('link')
+$opera-link-focus-background-color: opera-var('link-focus-background')
+$opera-link-hover-background-color: opera-var('link-hover-background')
 
-$opera-primary-button-background-color:       #{var(--opera-primary-button-background-color)}
-$opera-primary-button-background-color-hover: #{var(--opera-primary-button-background-color-hover)}
-$opera-primary-button-border-color:           #{var(--opera-primary-button-border-color)}
-$opera-primary-button-font-color:             #{var(--opera-primary-button-font-color)}
+$opera-modal-background-color: opera-var('modal-background')
+$opera-modal-border-color:     opera-var('modal-border')
+$opera-modal-header-color:     opera-var('modal-header')
 
-$opera-primary-color:     #{var(--opera-primary-color)}
-$opera-primary-color-rgb: #{var(--opera-primary-color-rgb)}
+$opera-primary-button-background-color:       opera-var('primary-button-background')
+$opera-primary-button-background-color-hover: opera-var('primary-button-background', 'hover')
+$opera-primary-button-border-color:           opera-var('primary-button-border')
+$opera-primary-button-font-color:             opera-var('primary-button-font')
 
-$opera-primary-color-l-30:  #{var(--opera-primary-color-l-30)}
-$opera-primary-color-l-60:  #{var(--opera-primary-color-l-60)}
-$opera-primary-color-l-80:  #{var(--opera-primary-color-l-80)}
-$opera-primary-color-l-120: #{var(--opera-primary-color-l-120)}
-$opera-primary-color-l-140: #{var(--opera-primary-color-l-140)}
-$opera-primary-color-opacity-25: #{var(--opera-primary-color-opacity-25)}
-$opera-primary-color-opacity-50: #{var(--opera-primary-color-opacity-50)}
-$opera-primary-color-opacity-75: #{var(--opera-primary-color-opacity-75)}
+$opera-primary-color:     opera-var('primary')
+$opera-primary-color-rgb: opera-var('primary', 'rgb')
 
-$opera-secondary-background-color: #{var(--opera-secondary-background-color)}
-$opera-secondary-color:            #{var(--opera-secondary-color)}
-$opera-secondary-font-color:       #{var(--opera-secondary-font-color)}
+$opera-primary-color-l-30:  opera-var('primary', 'l-30')
+$opera-primary-color-l-60:  opera-var('primary', 'l-60')
+$opera-primary-color-l-80:  opera-var('primary', 'l-80')
+$opera-primary-color-l-120: opera-var('primary', 'l-120')
+$opera-primary-color-l-140: opera-var('primary', 'l-140')
+$opera-primary-color-opacity-25: opera-var('primary', 'opacity-25')
+$opera-primary-color-opacity-50: opera-var('primary', 'opacity-50')
+$opera-primary-color-opacity-75: opera-var('primary', 'opacity-75')
 
-$opera-separator-color: #{var(--opera-separator-color)}
+$opera-secondary-background-color: opera-var('secondary-background')
+$opera-secondary-color:            opera-var('secondary')
+$opera-secondary-font-color:       opera-var('secondary-font')
 
-$opera-switch-color:               #{var(--opera-switch-color)}
-$opera-switch-gx-background-color: #{var(--opera-switch-gx-background-color)}
-$opera-switch-color-hover:         #{var(--opera-switch-color-hover)}
-$opera-switch-color-pressed:       #{var(--opera-switch-color-pressed)}
-$opera-switch-toggle-color:        #{var(--opera-switch-toggle-color)}
+$opera-separator-color: opera-var('separator')
 
-$opera-unchecked-radio-color: #{var(--opera-unchecked-radio-color)}
+$opera-switch-color:               opera-var('switch')
+$opera-switch-gx-background-color: opera-var('switch-gx-background')
+$opera-switch-color-hover:         opera-var('switch', 'hover')
+$opera-switch-color-pressed:       opera-var('switch', 'pressed')
+$opera-switch-toggle-color:        opera-var('switch-toggle')
+
+$opera-unchecked-radio-color: opera-var('unchecked-radio')
 
 @mixin gx-clip-path
     $size: var(--clip-path-size)

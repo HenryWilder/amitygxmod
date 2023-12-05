@@ -1,3 +1,5 @@
+@use 'sass:math'
+
 :root
     --clip-path-size: 10px
 
@@ -14,7 +16,7 @@
     $accent-b: env(-opera-gx-accent-color-b)
 
     @function scale($comp, $n)
-        $scalar: ($n/100)
+        $scalar: math.div($n, 100)
         @if $n > 100
             @return calc($comp + (255 - $comp) * ($scalar - 1))
         @else
@@ -30,9 +32,12 @@
         --palette-gx-accent-l-#{$n}-values-rgb: #{scale-rgb($accent-r, $accent-g, $accent-b, $n)}
         --palette-gx-accent-l-#{$n}: rgb(var(--palette-gx-accent-l-#{$n}-values-rgb))
 
+    --palette-gx-accent: var(--palette-gx-accent-l-100)
+
     /* Light theme by default */
 
     --opera-background-color: var(--palette-gx-no-96)
+    --opera-background-color-hsl: var(--palette-gx-no-96-values-hsl)
 
     --opera-button-background-color:          var(--palette-gx-no-90)
     --opera-button-background-color-hover:    var(--palette-gx-no-80)
@@ -72,7 +77,8 @@
     @each $n in 30, 60, 80, 120, 140
         --opera-primary-color-l-#{$n}: var(--palette-gx-accent-l-#{$n})
     @each $n in 25, 50, 75
-        --opera-primary-color-opacity-#{$n}: rgb(var(--palette-gx-accent-values-rgb) / ($n/100))
+        $amnt: math.div($n, 100)
+        --opera-primary-color-opacity-#{$n}: rgb(var(--palette-gx-accent-values-rgb) / #{$amnt})
 
     --opera-secondary-background-color: var(--palette-gx-no-98)
     --opera-secondary-color:            var(--palette-gx-accent-l-60)
@@ -89,7 +95,7 @@
     --opera-unchecked-radio-color: var(--palette-gx-no-24)
 
     @media (prefers-color-scheme: dark)
-        --opera-background-color: var(--palette-gx-no-08)
+        --opera-background-color: var(--palette-gx-no-8)
 
         --opera-button-background-color:          var(--palette-gx-no-20)
         --opera-button-background-color-hover:    var(--palette-gx-no-32)
