@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style test</title>
+    <link rel="stylesheet" href="/dist/css/opera-gx-colors.css">
+    <link rel="stylesheet" href="/dist/css/vscode-colors.css">
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            height: 100%
+        }
+        body {
+            background-color: var(--opera-background-color);
+            color: var(--opera-font-color);
+            overflow: hidden;
+        }
+        #top-bar, #side-panel {
+            background-color: var(--opera-secondary-background-color);
+            border: 0px solid var(--opera-separator-color);
+        }
+        #top-bar {
+            border-bottom-width: 1px;
+            padding: 2ch 3ch;
+        }
+        #side-panel {
+            border-right-width: 1px;
+            width: fit-content;
+            padding: 5ch;
+            font-weight: bold;
+            color: var(--opera-secondary-font-color);
+        }
+        main {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+        }
+        #content-area {
+            display: flex;
+            flex-flow: row nowrap;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        #side-panel ul > li + li {
+            margin-top: 1rem;
+        }
+        #padded-cell {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            flex-grow: 1;
+            overflow-y: scroll;
+            padding: 3rem;
+        }
+        article {
+            width: 800px;
+            background-color: var(--opera-secondary-background-color);
+            padding: 0;
+            border-radius: 5px;
+            border: 1px solid var(--opera-separator-color);
+        }
+        article + article {
+            margin-top: 3rem;
+        }
+        article ul > li {
+            margin-left: 2rem;
+            padding: 0.75rem 2ch;
+        }
+        article ul > li + li {
+            border-top: 1px solid var(--opera-separator-color);
+        }
+        .accented {
+            background-color: var(--palette-gx-accent-l-100);
+            width: 1rem;
+            height: 1rem;
+            display: inline-block;
+            border-radius: 999px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="top-bar">Test</div>
+        <div id="content-area">
+            <div id="side-panel">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <section id="padded-cell">
+                <article>
+                    <ul>
+                        <li>Item 1 <span class="accented"></span></li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li>Item 1 <span class="accented"></span></li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li>Item 1 <span class="accented"></span></li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li>Item 1 <span class="accented"></span></li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li>Item 1 <span class="accented"></span></li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
