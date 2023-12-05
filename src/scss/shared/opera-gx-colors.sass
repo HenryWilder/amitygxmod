@@ -32,25 +32,107 @@
 
     /* Light theme by default */
 
-    --opera-secondary-font-color: var(--palette-gx-no-40)
-    --opera-font-color: var(--palette-gx-no-00)
-
     --opera-background-color: var(--palette-gx-no-96)
-    --opera-secondary-background-color: var(--palette-gx-no-100)
 
-    --opera-tile-background-color: var(--palette-gx-no-96)
-    --opera-tile-border-color: var(--palette-gx-no-80)
+    --opera-button-background-color:          var(--palette-gx-no-90)
+    --opera-button-background-color-hover:    var(--palette-gx-no-80)
+    --opera-button-background-color-pressed:  var(--palette-gx-no-40)
+    --opera-button-border-color:              var(--palette-gx-no-80)
+    --opera-button-disabled-background-color: var(--palette-gx-no-90)
+    --opera-button-disabled-border-color:     var(--palette-gx-no-80)
 
-    --opera-separator-color: var(--palette-gx-no-90)
+    --opera-controls-disabled-color:      var(--palette-gx-no-80)
+    --opera-controls-primary-color:       var(--palette-gx-accent)
+    --opera-controls-primary-focus-color: var(--palette-gx-accent)
+    --opera-controls-primary-hover-color: var(--palette-gx-accent)
+
+    --opera-focus-outline-color: var(--palette-gx-accent-l-60)
+
+    --opera-input-background-color:         var(--palette-gx-no-88)
+    --opera-input-background-color-hover:   var(--palette-gx-no-90)
+    --opera-input-background-color-pressed: var(--palette-gx-no-90)
+    --opera-input-border-color:             var(--palette-gx-no-80)
+
+    --opera-link-color:                      var(--palette-gx-accent)
+    --opera-link-focus-background-color: rgb(var(--palette-gx-accent-values-rgb) / 0.5)
+    --opera-link-hover-background-color: rgb(var(--palette-gx-accent-values-rgb) / 0.25)
+
+    --opera-modal-background-color: var(--palette-gx-no-88)
+    --opera-modal-border-color:     var(--palette-gx-accent-l-60)
+    --opera-modal-header-color:     var(--palette-gx-no-88)
+
+    --opera-primary-button-background-color:       var(--palette-gx-accent)
+    --opera-primary-button-background-color-hover: var(--palette-gx-accent)
+    --opera-primary-button-border-color:           var(--opera-secondary-color)
+    --opera-primary-button-font-color:             var(--opera-gx-font-color)
+
+    --opera-primary-color:     var(--palette-gx-accent)
+    --opera-primary-color-rgb: var(--palette-gx-accent-values-rgb)
+
+    @each $n in 30, 60, 80, 120, 140
+        --opera-primary-color-l-#{$n}: var(--palette-gx-accent-l-#{$n})
+    @each $n in 25, 50, 75
+        --opera-primary-color-opacity-#{$n}: rgb(var(--palette-gx-accent-values-rgb) / ($n/100))
+
+    --opera-secondary-background-color: var(--palette-gx-no-98)
+    --opera-secondary-color:            var(--palette-gx-accent-l-60)
+    --opera-secondary-font-color:       var(--palette-gx-no-24)
+
+    --opera-separator-color: var(--palette-gx-no-80)
+
+    --opera-switch-color:               var(--palette-gx-no-80)
+    --opera-switch-gx-background-color: var(--palette-gx-no-80)
+    --opera-switch-color-hover:         var(--opera-font-color)
+    --opera-switch-color-pressed:       var(--palette-gx-no-24)
+    --opera-switch-toggle-color:        var(--palette-gx-no-100)
+
+    --opera-unchecked-radio-color: var(--palette-gx-no-24)
 
     @media (prefers-color-scheme: dark)
-        --opera-secondary-font-color: var(--palette-gx-no-77)
-        --opera-font-color: var(--palette-gx-no-100)
+        --opera-background-color: var(--palette-gx-no-08)
 
-        --opera-background-color: var(--palette-gx-no-8)
+        --opera-button-background-color:          var(--palette-gx-no-20)
+        --opera-button-background-color-hover:    var(--palette-gx-no-32)
+        --opera-button-background-color-pressed:  var(--palette-gx-no-59)
+        --opera-button-border-color:              var(--palette-gx-no-32)
+        --opera-button-disabled-background-color: var(--palette-gx-no-20)
+        --opera-button-disabled-border-color:     var(--palette-gx-no-32)
+
+        --opera-controls-disabled-color:      var(--palette-gx-no-32)
+        --opera-controls-primary-color:       var(--palette-gx-accent)
+        --opera-controls-primary-focus-color: var(--palette-gx-accent)
+        --opera-controls-primary-hover-color: var(--palette-gx-accent)
+
+        --opera-focus-outline-color: var(--palette-gx-accent-l-60)
+
+        --opera-input-background-color:         var(--palette-gx-no-16)
+        --opera-input-background-color-hover:   var(--palette-gx-no-20)
+        --opera-input-background-color-pressed: var(--palette-gx-no-20)
+        --opera-input-border-color:             var(--palette-gx-no-32)
+
+        --opera-link-color: var(--palette-gx-accent)
+
+        --opera-modal-background-color: var(--palette-gx-no-16)
+        --opera-modal-border-color:     var(--palette-gx-accent-l-60)
+        --opera-modal-header-color:     var(--palette-gx-no-16)
+
+        --opera-primary-button-background-color:       var(--palette-gx-accent)
+        --opera-primary-button-background-color-hover: var(--palette-gx-accent)
+        --opera-primary-button-border-color:           var(--opera-secondary-color)
+        --opera-primary-button-font-color:             var(--opera-gx-font-color)
+
+        --opera-primary-color: var(--palette-gx-accent)
+
         --opera-secondary-background-color: var(--palette-gx-no-12)
-
-        --opera-tile-background-color: var(--palette-gx-no-16)
-        --opera-tile-border-color: var(--palette-gx-no-20)
+        --opera-secondary-color:            var(--palette-gx-accent-l-60)
+        --opera-secondary-font-color:       var(--palette-gx-no-77)
 
         --opera-separator-color: var(--palette-gx-no-32)
+
+        --opera-switch-color:               var(--palette-gx-no-32)
+        --opera-switch-gx-background-color: var(--palette-gx-no-8)
+        --opera-switch-color-hover:         var(--opera-font-color)
+        --opera-switch-color-pressed:       var(--palette-gx-no-77)
+        --opera-switch-toggle-color:        var(--palette-gx-no-77)
+
+        --opera-unchecked-radio-color: var(--palette-gx-no-32)
