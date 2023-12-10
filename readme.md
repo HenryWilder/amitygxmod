@@ -1,5 +1,7 @@
 # Amity GX Mod
 
+**This mod is deprecated and will not be updated. It is being transferred to Mozilla Firefox.**
+
 ## Included features
 
 - [Theme](#theme)
